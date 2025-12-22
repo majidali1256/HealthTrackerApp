@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- ================================================== -->
+    <!-- PREMIUM 3D HEALTH TRACKER - PROFESSIONAL PALETTE  -->
+    <!-- Neumorphism + Glassmorphism + Deep Gradients      -->
+    <!-- ================================================== -->
+
+    <!-- Primary Brand Colors - Deep Indigo to Purple -->
+    <color name="primary_blue">#6366F1</color>
+    <color name="primary_blue_dark">#4F46E5</color>
+    <color name="primary_blue_light">#E0E7FF</color>
+    <color name="primary_purple">#8B5CF6</color>
+    <color name="primary_purple_dark">#7C3AED</color>
+    <color name="primary_purple_light">#EDE9FE</color>
+    
+    <!-- Premium Gradient Colors -->
+    <color name="gradient_start">#667EEA</color>
+    <color name="gradient_center">#764BA2</color>
+    <color name="gradient_end">#F093FB</color>
+    
+    <!-- Dashboard Header - Rich Purple Gradient -->
+    <color name="header_gradient_start">#4F46E5</color>
+    <color name="header_gradient_mid">#7C3AED</color>
+    <color name="header_gradient_end">#A855F7</color>
+    
+    <!-- Neumorphic Background - Soft Gray -->
+    <color name="neumorphic_bg">#E8EDF5</color>
+    <color name="neumorphic_light">#FFFFFF</color>
+    <color name="neumorphic_dark">#C5CCD6</color>
+    
+    <!-- Glass Effect Colors -->
+    <color name="glass_white">#B3FFFFFF</color>
+    <color name="glass_white_border">#66FFFFFF</color>
+    <color name="glass_dark">#1AFFFFFF</color>
+    
+    <!-- Background Colors - Premium Soft -->
+    <color name="background_primary">#F8FAFC</color>
+    <color name="background_secondary">#F1F5F9</color>
+    <color name="background_tertiary">#E2E8F0</color>
+    <color name="background_dark">#0F172A</color>
+    <color name="background_dark_card">#1E293B</color>
+    
+    <!-- Surface Colors -->
+    <color name="surface_white">#FFFFFF</color>
+    <color name="surface_elevated">#FFFFFF</color>
+    <color name="surface_card">#FFFFFF</color>
+    
+    <!-- Text Colors - Premium Typography -->
+    <color name="text_primary">#0F172A</color>
+    <color name="text_secondary">#475569</color>
+    <color name="text_tertiary">#64748B</color>
+    <color name="text_hint">#94A3B8</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_dark">#F1F5F9</color>
+    <color name="text_on_gradient">#FFFFFF</color>
+    
+    <!-- Status Colors - Vibrant -->
+    <color name="success_green">#10B981</color>
+    <color name="success_green_light">#D1FAE5</color>
+    <color name="success_green_dark">#059669</color>
+    <color name="warning_orange">#F59E0B</color>
+    <color name="warning_orange_light">#FEF3C7</color>
+    <color name="error_red">#EF4444</color>
+    <color name="error_red_light">#FEE2E2</color>
+    <color name="info_blue">#3B82F6</color>
+    <color name="info_blue_light">#DBEAFE</color>
+    <color name="alert_red">#DC2626</color>
+
+    <!-- ================================================== -->
+    <!-- HEALTH METRIC GRADIENTS - Premium Color Pairs     -->
+    <!-- ================================================== -->
+    
+    <!-- Heart Rate - Coral to Rose -->
+    <color name="heart_rate_red">#F43F5E</color>
+    <color name="heart_rate_red_light">#FFE4E6</color>
+    <color name="heart_rate_gradient_start">#F43F5E</color>
+    <color name="heart_rate_gradient_end">#E11D48</color>
+    
+    <!-- Steps - Emerald to Teal -->
+    <color name="steps_teal">#14B8A6</color>
+    <color name="steps_teal_light">#CCFBF1</color>
+    <color name="steps_gradient_start">#10B981</color>
+    <color name="steps_gradient_end">#059669</color>
+    
+    <!-- Sleep - Violet to Purple -->
+    <color name="sleep_purple">#8B5CF6</color>
+    <color name="sleep_purple_light">#EDE9FE</color>
+    <color name="sleep_gradient_start">#8B5CF6</color>
+    <color name="sleep_gradient_end">#6D28D9</color>
+    
+    <!-- Hydration - Cyan to Blue -->
+    <color name="hydration_cyan">#06B6D4</color>
+    <color name="hydration_cyan_light">#CFFAFE</color>
+    <color name="hydration_gradient_start">#22D3EE</color>
+    <color name="hydration_gradient_end">#0891B2</color>
+    
+    <!-- Nutrition - Lime to Green -->
+    <color name="nutrition_green">#84CC16</color>
+    <color name="nutrition_green_light">#ECFCCB</color>
+    <color name="nutrition_gradient_start">#84CC16</color>
+    <color name="nutrition_gradient_end">#65A30D</color>
+    
+    <!-- SpO2 - Indigo -->
+    <color name="spo2_blue">#6366F1</color>
+    <color name="spo2_blue_light">#E0E7FF</color>
+    
+    <!-- Calories - Amber to Orange -->
+    <color name="calories_orange">#F97316</color>
+    <color name="calories_orange_light">#FFEDD5</color>
+    <color name="calories_gradient_start">#FB923C</color>
+    <color name="calories_gradient_end">#EA580C</color>
+    
+    <!-- ================================================== -->
+    <!-- SLEEP STAGE COLORS                                -->
+    <!-- ================================================== -->
+    <color name="deep_sleep_indigo">#4338CA</color>
+    <color name="light_sleep_blue">#818CF8</color>
+    <color name="rem_sleep_lavender">#C4B5FD</color>
+    <color name="awake_grey">#CBD5E1</color>
+    
+    <!-- ================================================== -->
+    <!-- 3D CARD EFFECTS - Shadows and Highlights          -->
+    <!-- ================================================== -->
+    <color name="card_background">#FFFFFF</color>
+    <color name="card_shadow_dark">#1A0F172A</color>
+    <color name="card_shadow_light">#0D6366F1</color>
+    <color name="card_border">#E2E8F0</color>
+    <color name="card_highlight">#FFFFFF</color>
+    <color name="divider">#E2E8F0</color>
+    
+    <!-- Neumorphic Shadows -->
+    <color name="shadow_dark">#BEC8D9</color>
+    <color name="shadow_light">#FFFFFF</color>
+    
+    <!-- ================================================== -->
+    <!-- NAVIGATION                                        -->
+    <!-- ================================================== -->
+    <color name="nav_selected">#6366F1</color>
+    <color name="nav_unselected">#94A3B8</color>
+    <color name="nav_background">#FFFFFF</color>
+    <color name="nav_indicator">#EEF2FF</color>
+    
+    <!-- FAB Colors -->
+    <color name="fab_background">#6366F1</color>
+    <color name="fab_icon">#FFFFFF</color>
+    <color name="fab_shadow">#336366F1</color>
+    
+    <!-- ================================================== -->
+    <!-- FEATURE CARD COLORS - Unique per feature          -->
+    <!-- ================================================== -->
+    <color name="emergency_red">#EF4444</color>
+    <color name="emergency_red_light">#FEF2F2</color>
+    <color name="documents_amber">#F59E0B</color>
+    <color name="documents_amber_light">#FFFBEB</color>
+    <color name="symptoms_pink">#EC4899</color>
+    <color name="symptoms_pink_light">#FCE7F3</color>
+    <color name="food_emerald">#10B981</color>
+    <color name="food_emerald_light">#ECFDF5</color>
+    <color name="medication_violet">#8B5CF6</color>
+    <color name="medication_violet_light">#F5F3FF</color>
+    <color name="trends_sky">#0EA5E9</color>
+    <color name="trends_sky_light">#F0F9FF</color>
+    <color name="export_slate">#64748B</color>
+    <color name="export_slate_light">#F1F5F9</color>
+    
+    <!-- Social Login -->
+    <color name="google_red">#EA4335</color>
+    <color name="google_red_light">#FEF0EF</color>
+    <color name="facebook_blue">#1877F2</color>
+    <color name="facebook_blue_light">#EBF5FF</color>
+    
+    <!-- Chip Colors -->
+    <color name="chip_selected">#6366F1</color>
+    <color name="chip_background">#F1F5F9</color>
+    <color name="chip_text">#475569</color>
+    
+    <!-- Premium Accent -->
+    <color name="accent_gold">#F59E0B</color>
+    <color name="accent_gold_light">#FEF3C7</color>
+</resources>

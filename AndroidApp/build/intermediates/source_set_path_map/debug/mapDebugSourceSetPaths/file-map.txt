@@ -1,0 +1,79 @@
+com.healthtracker.app.AndroidApp-lifecycle-viewmodel-ktx-2.7.0-0 /Users/macbookair/.gradle/caches/8.9/transforms/03f5238746c536a1a793613222cd3a7e/transformed/lifecycle-viewmodel-ktx-2.7.0/res
+com.healthtracker.app.AndroidApp-fragment-1.6.2-1 /Users/macbookair/.gradle/caches/8.9/transforms/0c536e8d3515d7c666e905c31dc0b64d/transformed/fragment-1.6.2/res
+com.healthtracker.app.AndroidApp-play-services-base-18.1.0-2 /Users/macbookair/.gradle/caches/8.9/transforms/0d76d1b6ca152889d125401bc33a72e7/transformed/play-services-base-18.1.0/res
+com.healthtracker.app.AndroidApp-databinding-runtime-8.7.3-3 /Users/macbookair/.gradle/caches/8.9/transforms/1018799ae2cfe9b0330598e98ed333bc/transformed/databinding-runtime-8.7.3/res
+com.healthtracker.app.AndroidApp-datastore-1.0.0-4 /Users/macbookair/.gradle/caches/8.9/transforms/114cf6bf7660b900e9e34cdb465d3977/transformed/datastore-1.0.0/res
+com.healthtracker.app.AndroidApp-material-1.11.0-5 /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/res
+com.healthtracker.app.AndroidApp-constraintlayout-2.1.4-6 /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/res
+com.healthtracker.app.AndroidApp-profileinstaller-1.3.1-7 /Users/macbookair/.gradle/caches/8.9/transforms/198c53ac6b798b5e31bd87d821525841/transformed/profileinstaller-1.3.1/res
+com.healthtracker.app.AndroidApp-room-runtime-2.6.1-8 /Users/macbookair/.gradle/caches/8.9/transforms/1bd6bb735e2d5bbdfba7b5e4cb5a0ddf/transformed/room-runtime-2.6.1/res
+com.healthtracker.app.AndroidApp-drawerlayout-1.1.1-9 /Users/macbookair/.gradle/caches/8.9/transforms/1c0d7b86e14866eaa1e0e8511adac1fd/transformed/drawerlayout-1.1.1/res
+com.healthtracker.app.AndroidApp-firebase-common-20.4.2-10 /Users/macbookair/.gradle/caches/8.9/transforms/1d4f446aa269ccfb8d69501325650cda/transformed/firebase-common-20.4.2/res
+com.healthtracker.app.AndroidApp-coil-base-2.5.0-11 /Users/macbookair/.gradle/caches/8.9/transforms/1e0cf8da329aacfcb56a887056158fdd/transformed/coil-base-2.5.0/res
+com.healthtracker.app.AndroidApp-navigation-common-ktx-2.7.6-12 /Users/macbookair/.gradle/caches/8.9/transforms/1e58b763de050382133050f40d43df24/transformed/navigation-common-ktx-2.7.6/res
+com.healthtracker.app.AndroidApp-navigation-ui-2.7.6-13 /Users/macbookair/.gradle/caches/8.9/transforms/237b45b8368d33e6239bf6b25a072ae0/transformed/navigation-ui-2.7.6/res
+com.healthtracker.app.AndroidApp-circleimageview-3.1.0-14 /Users/macbookair/.gradle/caches/8.9/transforms/2440d71a02b212134f1a1d0db48da932/transformed/circleimageview-3.1.0/res
+com.healthtracker.app.AndroidApp-lifecycle-process-2.7.0-15 /Users/macbookair/.gradle/caches/8.9/transforms/283ee8434a527336d0a652ed944787c1/transformed/lifecycle-process-2.7.0/res
+com.healthtracker.app.AndroidApp-camera-video-1.3.1-16 /Users/macbookair/.gradle/caches/8.9/transforms/2a312a61438a7aa4fad464840754cf0f/transformed/camera-video-1.3.1/res
+com.healthtracker.app.AndroidApp-annotation-experimental-1.3.1-17 /Users/macbookair/.gradle/caches/8.9/transforms/30d79ab2c67aa87ff6e561f27ae12007/transformed/annotation-experimental-1.3.1/res
+com.healthtracker.app.AndroidApp-play-services-basement-18.2.0-18 /Users/macbookair/.gradle/caches/8.9/transforms/31cc67ef36745e11c19aa2afd6139922/transformed/play-services-basement-18.2.0/res
+com.healthtracker.app.AndroidApp-emoji2-1.2.0-19 /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/res
+com.healthtracker.app.AndroidApp-cardview-1.0.0-20 /Users/macbookair/.gradle/caches/8.9/transforms/377582ba6e72b5f704c2195dc92f36d2/transformed/cardview-1.0.0/res
+com.healthtracker.app.AndroidApp-navigation-common-2.7.6-21 /Users/macbookair/.gradle/caches/8.9/transforms/416165c85b08c5d6b45392272d2c2d60/transformed/navigation-common-2.7.6/res
+com.healthtracker.app.AndroidApp-facebook-login-16.3.0-22 /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/res
+com.healthtracker.app.AndroidApp-lifecycle-viewmodel-2.7.0-23 /Users/macbookair/.gradle/caches/8.9/transforms/49bac0a5c7e76bdc2a89030aecb25fe4/transformed/lifecycle-viewmodel-2.7.0/res
+com.healthtracker.app.AndroidApp-core-ktx-1.12.0-24 /Users/macbookair/.gradle/caches/8.9/transforms/4a4440b74ab7be95901579ba10d9a21f/transformed/core-ktx-1.12.0/res
+com.healthtracker.app.AndroidApp-appcompat-resources-1.6.1-25 /Users/macbookair/.gradle/caches/8.9/transforms/4c64ba9d521b838cc3ffbd98bfafb296/transformed/appcompat-resources-1.6.1/res
+com.healthtracker.app.AndroidApp-navigation-fragment-ktx-2.7.6-26 /Users/macbookair/.gradle/caches/8.9/transforms/4d49f3acb653a3c1a33d170c49045536/transformed/navigation-fragment-ktx-2.7.6/res
+com.healthtracker.app.AndroidApp-media-1.0.0-27 /Users/macbookair/.gradle/caches/8.9/transforms/535f9d5685a1b4ab0a65dd9471be283a/transformed/media-1.0.0/res
+com.healthtracker.app.AndroidApp-core-runtime-2.2.0-28 /Users/macbookair/.gradle/caches/8.9/transforms/5ca87856fc4739ef493e4411df994784/transformed/core-runtime-2.2.0/res
+com.healthtracker.app.AndroidApp-lifecycle-livedata-core-2.7.0-29 /Users/macbookair/.gradle/caches/8.9/transforms/621590b4842d472bb4d57f220764829e/transformed/lifecycle-livedata-core-2.7.0/res
+com.healthtracker.app.AndroidApp-transition-1.4.1-30 /Users/macbookair/.gradle/caches/8.9/transforms/67172082071f640aa466cd9714a8d237/transformed/transition-1.4.1/res
+com.healthtracker.app.AndroidApp-lifecycle-runtime-ktx-2.7.0-31 /Users/macbookair/.gradle/caches/8.9/transforms/69df6cc4fb477efad2ce8d29e5ccf4d8/transformed/lifecycle-runtime-ktx-2.7.0/res
+com.healthtracker.app.AndroidApp-window-1.0.0-32 /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/res
+com.healthtracker.app.AndroidApp-security-crypto-1.1.0-alpha06-33 /Users/macbookair/.gradle/caches/8.9/transforms/70ed717cae9a8db11d96dd478e143cad/transformed/security-crypto-1.1.0-alpha06/res
+com.healthtracker.app.AndroidApp-lifecycle-service-2.7.0-34 /Users/macbookair/.gradle/caches/8.9/transforms/736b013ba89b893019bb38d6b8b336d0/transformed/lifecycle-service-2.7.0/res
+com.healthtracker.app.AndroidApp-play-services-auth-20.7.0-35 /Users/macbookair/.gradle/caches/8.9/transforms/737957ee4d4ba52996b6518983c5ed07/transformed/play-services-auth-20.7.0/res
+com.healthtracker.app.AndroidApp-activity-1.8.2-36 /Users/macbookair/.gradle/caches/8.9/transforms/73c5f5c64bc19c3b34a166fdb7cc1c2c/transformed/activity-1.8.2/res
+com.healthtracker.app.AndroidApp-startup-runtime-1.1.1-37 /Users/macbookair/.gradle/caches/8.9/transforms/78ae3fbe696d4f61db87158721275abf/transformed/startup-runtime-1.1.1/res
+com.healthtracker.app.AndroidApp-activity-ktx-1.8.2-38 /Users/macbookair/.gradle/caches/8.9/transforms/7b8f4b649a007313b34a2f0308a39ee3/transformed/activity-ktx-1.8.2/res
+com.healthtracker.app.AndroidApp-room-ktx-2.6.1-39 /Users/macbookair/.gradle/caches/8.9/transforms/7fbe2057e95eabe55878694c7d06ad7c/transformed/room-ktx-2.6.1/res
+com.healthtracker.app.AndroidApp-core-1.12.0-40 /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/res
+com.healthtracker.app.AndroidApp-camera-view-1.3.1-41 /Users/macbookair/.gradle/caches/8.9/transforms/8349321c4dfdd265cf31518910a45549/transformed/camera-view-1.3.1/res
+com.healthtracker.app.AndroidApp-camera-lifecycle-1.3.1-42 /Users/macbookair/.gradle/caches/8.9/transforms/86ed8c9932582cc7cfc83f2f1f789078/transformed/camera-lifecycle-1.3.1/res
+com.healthtracker.app.AndroidApp-slidingpanelayout-1.2.0-43 /Users/macbookair/.gradle/caches/8.9/transforms/8a057eea35829029c05d4dde8f217718/transformed/slidingpanelayout-1.2.0/res
+com.healthtracker.app.AndroidApp-databinding-adapters-8.7.3-44 /Users/macbookair/.gradle/caches/8.9/transforms/8d0aeded26a59666698bdedee6f1a076/transformed/databinding-adapters-8.7.3/res
+com.healthtracker.app.AndroidApp-appcompat-1.6.1-45 /Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/res
+com.healthtracker.app.AndroidApp-lifecycle-livedata-2.7.0-46 /Users/macbookair/.gradle/caches/8.9/transforms/8da8540b9b994d25e14051d05d36ed47/transformed/lifecycle-livedata-2.7.0/res
+com.healthtracker.app.AndroidApp-sqlite-2.4.0-47 /Users/macbookair/.gradle/caches/8.9/transforms/974592d456394ea71701f66af850d501/transformed/sqlite-2.4.0/res
+com.healthtracker.app.AndroidApp-navigation-ui-ktx-2.7.6-48 /Users/macbookair/.gradle/caches/8.9/transforms/9784e29c5bf3825f5943f9e73cc8679b/transformed/navigation-ui-ktx-2.7.6/res
+com.healthtracker.app.AndroidApp-camera-extensions-1.3.1-49 /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/res
+com.healthtracker.app.AndroidApp-viewpager2-1.0.0-50 /Users/macbookair/.gradle/caches/8.9/transforms/a10ab2b6f245b1ee9dfc8049e2e2adc9/transformed/viewpager2-1.0.0/res
+com.healthtracker.app.AndroidApp-lifecycle-runtime-2.7.0-51 /Users/macbookair/.gradle/caches/8.9/transforms/a333b105efcb7a902bffef2ce632c35c/transformed/lifecycle-runtime-2.7.0/res
+com.healthtracker.app.AndroidApp-camera-camera2-1.3.1-52 /Users/macbookair/.gradle/caches/8.9/transforms/a43c7fd80f4dd032f157e286be613f99/transformed/camera-camera2-1.3.1/res
+com.healthtracker.app.AndroidApp-navigation-runtime-ktx-2.7.6-53 /Users/macbookair/.gradle/caches/8.9/transforms/a5a7fe6c92b211b019f330542650881d/transformed/navigation-runtime-ktx-2.7.6/res
+com.healthtracker.app.AndroidApp-browser-1.4.0-54 /Users/macbookair/.gradle/caches/8.9/transforms/b4d09c0b745c9498d9c144142416d613/transformed/browser-1.4.0/res
+com.healthtracker.app.AndroidApp-lifecycle-livedata-ktx-2.7.0-55 /Users/macbookair/.gradle/caches/8.9/transforms/bab39868eaf956c32127ed469a23ce24/transformed/lifecycle-livedata-ktx-2.7.0/res
+com.healthtracker.app.AndroidApp-navigation-runtime-2.7.6-56 /Users/macbookair/.gradle/caches/8.9/transforms/d162eba1f397181132d5296cc99a3dda/transformed/navigation-runtime-2.7.6/res
+com.healthtracker.app.AndroidApp-navigation-fragment-2.7.6-57 /Users/macbookair/.gradle/caches/8.9/transforms/d1db9afc7a5a191335bb70fa3c8ae830/transformed/navigation-fragment-2.7.6/res
+com.healthtracker.app.AndroidApp-lifecycle-viewmodel-savedstate-2.7.0-58 /Users/macbookair/.gradle/caches/8.9/transforms/d2f61415cd2bc7c6a2b391408b969fbf/transformed/lifecycle-viewmodel-savedstate-2.7.0/res
+com.healthtracker.app.AndroidApp-coordinatorlayout-1.1.0-59 /Users/macbookair/.gradle/caches/8.9/transforms/d4cefc8ac7f5002bb55658a0e6db5a05/transformed/coordinatorlayout-1.1.0/res
+com.healthtracker.app.AndroidApp-lifecycle-livedata-core-ktx-2.7.0-60 /Users/macbookair/.gradle/caches/8.9/transforms/dd5495a63484d872afe0ec1b674a88a7/transformed/lifecycle-livedata-core-ktx-2.7.0/res
+com.healthtracker.app.AndroidApp-fragment-ktx-1.6.2-61 /Users/macbookair/.gradle/caches/8.9/transforms/e3e4273674cc93f12d021484b1122ea5/transformed/fragment-ktx-1.6.2/res
+com.healthtracker.app.AndroidApp-savedstate-ktx-1.2.1-62 /Users/macbookair/.gradle/caches/8.9/transforms/e64bbb973ddb50745817d8dd2b028257/transformed/savedstate-ktx-1.2.1/res
+com.healthtracker.app.AndroidApp-datastore-preferences-1.0.0-63 /Users/macbookair/.gradle/caches/8.9/transforms/e6bb38a77c26baed28a93e6db563f5dd/transformed/datastore-preferences-1.0.0/res
+com.healthtracker.app.AndroidApp-emoji2-views-helper-1.2.0-64 /Users/macbookair/.gradle/caches/8.9/transforms/e8c1d13be6744bf8682b1befd4a4ff18/transformed/emoji2-views-helper-1.2.0/res
+com.healthtracker.app.AndroidApp-savedstate-1.2.1-65 /Users/macbookair/.gradle/caches/8.9/transforms/ecc8d45a02a0738d7dd840833ac07481/transformed/savedstate-1.2.1/res
+com.healthtracker.app.AndroidApp-camera-core-1.3.1-66 /Users/macbookair/.gradle/caches/8.9/transforms/ed181cb35e29e3a0ef33b982bd3ca464/transformed/camera-core-1.3.1/res
+com.healthtracker.app.AndroidApp-recyclerview-1.1.0-67 /Users/macbookair/.gradle/caches/8.9/transforms/f319bf8ad8b47f60baacdaad1cf2e053/transformed/recyclerview-1.1.0/res
+com.healthtracker.app.AndroidApp-sqlite-framework-2.4.0-68 /Users/macbookair/.gradle/caches/8.9/transforms/f94d7a3a4a66949932c885033f3c0ec5/transformed/sqlite-framework-2.4.0/res
+com.healthtracker.app.AndroidApp-core-splashscreen-1.0.1-69 /Users/macbookair/.gradle/caches/8.9/transforms/f9cec01970433487a0c441d3fd7d5b61/transformed/core-splashscreen-1.0.1/res
+com.healthtracker.app.AndroidApp-facebook-common-16.3.0-70 /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/res
+com.healthtracker.app.AndroidApp-pngs-71 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/generated/res/pngs/debug
+com.healthtracker.app.AndroidApp-res-72 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/generated/res/processDebugGoogleServices
+com.healthtracker.app.AndroidApp-resValues-73 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/generated/res/resValues/debug
+com.healthtracker.app.AndroidApp-packageDebugResources-74 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/intermediates/incremental/debug/packageDebugResources/merged.dir
+com.healthtracker.app.AndroidApp-packageDebugResources-75 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/intermediates/incremental/debug/packageDebugResources/stripped.dir
+com.healthtracker.app.AndroidApp-debug-76 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/build/intermediates/merged_res/debug/mergeDebugResources
+com.healthtracker.app.AndroidApp-debug-77 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/debug/res
+com.healthtracker.app.AndroidApp-main-78 /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/res

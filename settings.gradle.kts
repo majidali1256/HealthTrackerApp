@@ -14,4 +14,4 @@ dependencyResolutionManagement {
 }
 
 rootProject.name = "HealthTracker"
-include(":app")
+include(":AndroidApp")
