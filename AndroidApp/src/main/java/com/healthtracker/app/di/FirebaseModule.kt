@@ -1,6 +1,7 @@
 package com.healthtracker.app.di
 
 import android.content.Context
+import android.util.Log
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.auth.api.signin.GoogleSignInOptions
@@ -36,11 +37,25 @@ object FirebaseModule {
     @Provides
     @Singleton
     fun provideGoogleSignInOptions(@ApplicationContext context: Context): GoogleSignInOptions {
-        return GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
-            .requestIdToken(context.getString(com.healthtracker.app.R.string.default_web_client_id))
-            .requestEmail()
-            .requestProfile()
-            .build()
+        val webClientId = try {
+            context.getString(com.healthtracker.app.R.string.default_web_client_id)
+        } catch (e: Exception) {
+            ""
+        }
+        
+        return if (webClientId.isNotBlank() && !webClientId.startsWith("YOUR_")) {
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestIdToken(webClientId)
+                .requestEmail()
+                .requestProfile()
+                .build()
+        } else {
+            Log.w("FirebaseModule", "Google Sign-In not configured - using basic sign-in")
+            GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
+                .requestEmail()
+                .requestProfile()
+                .build()
+        }
     }
     
     @Provides
