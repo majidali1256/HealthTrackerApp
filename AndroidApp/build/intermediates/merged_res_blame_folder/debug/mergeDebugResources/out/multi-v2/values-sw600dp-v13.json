@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "outputFile": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-74:/values-sw600dp-v13/values-sw600dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
@@ -30,6 +30,59 @@
                         "endLines": "10,11,12,13,14,15,17,18,19,20,21,25",
                         "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
                         "endOffsets": "666,736,807,879,937,995,1104,1168,1224,1283,1346,1518"
+                    }
+                }
+            ]
+        },
+        {
+            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/values-sw600dp-v13/values-sw600dp-v13.xml",
+            "map": [
+                {
+                    "source": "/Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "2,3,4,5,6,7,8,9",
+                        "startColumns": "4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,124,193,263,337,413,472,543",
+                        "endColumns": "68,68,69,73,75,58,70,67",
+                        "endOffsets": "119,188,258,332,408,467,538,606"
+                    }
+                },
+                {
+                    "source": "/Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/res/values-sw600dp/dimens.xml",
+                    "from": {
+                        "startLines": "14,15,3,5,6,4,16,8,12,11,10,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "532,582,85,183,234,131,626,289,478,429,379,334",
+                        "endColumns": "49,43,45,50,49,51,45,44,48,48,49,44",
+                        "endOffsets": "577,621,126,229,279,178,667,329,522,473,424,374"
+                    },
+                    "to": {
+                        "startLines": "10,11,21,22,23,26,27,28,29,30,31,32",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "611,661,1267,1313,1364,1529,1581,1627,1672,1721,1770,1820",
+                        "endColumns": "49,43,45,50,49,51,45,44,48,48,49,44",
+                        "endOffsets": "656,700,1308,1359,1409,1576,1622,1667,1716,1765,1815,1860"
+                    }
+                },
+                {
+                    "source": "/Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/res/values-sw600dp-v13/values-sw600dp-v13.xml",
+                    "from": {
+                        "startLines": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startColumns": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1",
+                        "startOffsets": "-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1,-1"
+                    },
+                    "to": {
+                        "startLines": "12,13,14,15,16,17,18,20,24,25,33,34",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "705,765,835,906,978,1036,1094,1203,1414,1470,1865,1928",
+                        "endLines": "12,13,14,15,16,17,19,20,24,25,33,37",
+                        "endColumns": "59,69,70,71,57,57,10,63,55,58,62,10",
+                        "endOffsets": "760,830,901,973,1031,1089,1198,1262,1465,1524,1923,2095"
                     }
                 }
             ]

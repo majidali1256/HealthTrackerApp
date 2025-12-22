@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="card_corner_radius">28dp</dimen>
+    <dimen name="card_padding">24dp</dimen>
+    <dimen name="header_height">340dp</dimen>
+    <dimen name="metric_card_height">160dp</dimen>
+    <dimen name="metric_card_margin">24dp</dimen>
+    <dimen name="primary_card_height">200dp</dimen>
+    <dimen name="screen_padding">32dp</dimen>
+    <dimen name="text_greeting">16sp</dimen>
+    <dimen name="text_metric_label">15sp</dimen>
+    <dimen name="text_metric_value">36sp</dimen>
+    <dimen name="text_primary_value">88sp</dimen>
+    <dimen name="text_username">36sp</dimen>
+</resources>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Small phones (320dp) -->
+    <dimen name="header_height">220dp</dimen>
+    <dimen name="primary_card_height">130dp</dimen>
+    <dimen name="metric_card_height">100dp</dimen>
+    <dimen name="metric_card_margin">12dp</dimen>
+    
+    <dimen name="text_greeting">12sp</dimen>
+    <dimen name="text_username">22sp</dimen>
+    <dimen name="text_primary_value">52sp</dimen>
+    <dimen name="text_metric_value">22sp</dimen>
+    <dimen name="text_metric_label">10sp</dimen>
+    
+    <dimen name="card_corner_radius">16dp</dimen>
+    <dimen name="card_padding">12dp</dimen>
+    <dimen name="screen_padding">12dp</dimen>
+</resources>

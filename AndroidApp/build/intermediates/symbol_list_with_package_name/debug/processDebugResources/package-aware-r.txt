@@ -2487,6 +2487,7 @@ dimen fab_size
 dimen fastscroll_default_thickness
 dimen fastscroll_margin
 dimen fastscroll_minimum_range
+dimen header_height
 dimen highlight_alpha_material_colored
 dimen highlight_alpha_material_dark
 dimen highlight_alpha_material_light
@@ -2921,6 +2922,8 @@ dimen material_textinput_max_width
 dimen material_textinput_min_width
 dimen material_time_picker_minimum_screen_height
 dimen material_time_picker_minimum_screen_width
+dimen metric_card_height
+dimen metric_card_margin
 dimen metric_card_min_height
 dimen metric_icon_size
 dimen metric_label_text_size
@@ -3137,9 +3140,11 @@ dimen notification_small_icon_size_as_large
 dimen notification_subtext_size
 dimen notification_top_pad
 dimen notification_top_pad_large_text
+dimen primary_card_height
 dimen profile_picture_large
 dimen profile_picture_medium
 dimen profile_picture_small
+dimen screen_padding
 dimen screen_padding_horizontal
 dimen screen_padding_vertical
 dimen sliding_pane_detail_pane_width
@@ -3160,6 +3165,11 @@ dimen subtitle_corner_radius
 dimen subtitle_outline_width
 dimen subtitle_shadow_offset
 dimen subtitle_shadow_radius
+dimen text_greeting
+dimen text_metric_label
+dimen text_metric_value
+dimen text_primary_value
+dimen text_username
 dimen tooltip_corner_radius
 dimen tooltip_horizontal_padding
 dimen tooltip_margin

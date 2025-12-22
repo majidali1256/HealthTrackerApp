@@ -1,74 +1,78 @@
 [
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_medications.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_medications.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_medical_id.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_medical_id.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_health_log.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/item_health_log.xml"
     },
     {
         "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_dashboard.xml",
         "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_food_logger.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_food_logger.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_tools.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_tools.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_sleep_analysis.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_sleep_analysis.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_login.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_login.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_profile_setup.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_profile_setup.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_profile.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_profile.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_document.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/item_document.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_food_logger.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_food_logger.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_settings.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_settings.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_medication.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/item_medication.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_signup.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_signup.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_settings.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_settings.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_document_vault.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_document_vault.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_signup.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_signup.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_medication.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/item_medication.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_sleep_analysis.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_sleep_analysis.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_symptom_checker.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_symptom_checker.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_document_vault.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_document_vault.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_trends.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_trends.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_medications.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_medications.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_medical_id.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_medical_id.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_dashboard.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_dashboard.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_symptom.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/item_symptom.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_profile_setup.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_profile_setup.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_tools.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_tools.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_trends.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_trends.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_login.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_login.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_document.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/item_document.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_health_log.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/item_health_log.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_symptom_checker.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/activity_symptom_checker.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/activity_profile.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-78:/layout/activity_profile.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-75:/layout/item_symptom.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-78:/layout/item_symptom.xml"
     }
 ]
