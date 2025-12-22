@@ -600,50 +600,50 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
-
-      static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
-
-      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+      static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
 
       static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
 
-      static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
-
-      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
-
-      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
-
-      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
+      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
 
       static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
 
-      @KeepFieldType
-      SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
+      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
 
-      @KeepFieldType
-      DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
+      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
 
-      @KeepFieldType
-      ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
+      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
 
-      @KeepFieldType
-      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
+      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
+
+      static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
 
       @KeepFieldType
       TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
 
       @KeepFieldType
-      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
+      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
 
       @KeepFieldType
-      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
+      ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
+
+      @KeepFieldType
+      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
+
+      @KeepFieldType
+      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
 
       @KeepFieldType
       AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
 
       @KeepFieldType
-      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
+      SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
+
+      @KeepFieldType
+      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
+
+      @KeepFieldType
+      DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
     }
   }
 
@@ -708,32 +708,32 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
+      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
 
       static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
 
-      static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
+      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
 
       static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
 
       static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
 
-      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+      static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
 
-      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
+      static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
+
+      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
 
       static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
 
-      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
-
       @KeepFieldType
-      DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
+      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
 
       @KeepFieldType
       AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
 
       @KeepFieldType
-      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
+      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
 
       @KeepFieldType
       FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
@@ -742,16 +742,16 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
       SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
 
       @KeepFieldType
+      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
+
+      @KeepFieldType
+      DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
+
+      @KeepFieldType
       ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
 
       @KeepFieldType
-      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
-
-      @KeepFieldType
       TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
-
-      @KeepFieldType
-      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
