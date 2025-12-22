@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/values-sw320dp-v13/values-sw320dp-v13.xml",
+            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-71:/values-sw320dp-v13/values-sw320dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/res/values-sw320dp/dimens.xml",

@@ -2,6 +2,7 @@ package com.healthtracker.app.ui.auth
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import android.widget.Toast
 import androidx.activity.result.contract.ActivityResultContracts
@@ -10,11 +11,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
-import com.facebook.CallbackManager
-import com.facebook.FacebookCallback
-import com.facebook.FacebookException
-import com.facebook.login.LoginManager
-import com.facebook.login.LoginResult
 import com.google.android.gms.auth.api.signin.GoogleSignIn
 import com.google.android.gms.auth.api.signin.GoogleSignInClient
 import com.google.android.gms.common.api.ApiException
@@ -38,8 +34,6 @@ class LoginActivity : AppCompatActivity() {
     @Inject
     lateinit var googleSignInClient: GoogleSignInClient
     
-    private lateinit var callbackManager: CallbackManager
-    
     // Google Sign In launcher
     private val googleSignInLauncher = registerForActivityResult(
         ActivityResultContracts.StartActivityForResult()
@@ -49,37 +43,23 @@ class LoginActivity : AppCompatActivity() {
             val account = task.getResult(ApiException::class.java)
             viewModel.signInWithGoogle(account)
         } catch (e: ApiException) {
+            Log.e("LoginActivity", "Google sign in failed", e)
             Toast.makeText(this, "Google sign in failed: ${e.message}", Toast.LENGTH_SHORT).show()
         }
     }
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityLoginBinding.inflate(layoutInflater)
-        setContentView(binding.root)
-        
-        setupFacebookLogin()
-        setupClickListeners()
-        observeViewModel()
-    }
-    
-    private fun setupFacebookLogin() {
-        callbackManager = CallbackManager.Factory.create()
-        
-        LoginManager.getInstance().registerCallback(callbackManager,
-            object : FacebookCallback<LoginResult> {
-                override fun onSuccess(result: LoginResult) {
-                    viewModel.signInWithFacebook(result.accessToken.token)
-                }
-                
-                override fun onCancel() {
-                    Toast.makeText(this@LoginActivity, "Facebook login cancelled", Toast.LENGTH_SHORT).show()
-                }
-                
-                override fun onError(error: FacebookException) {
-                    Toast.makeText(this@LoginActivity, "Facebook login error: ${error.message}", Toast.LENGTH_SHORT).show()
-                }
-            })
+        try {
+            binding = ActivityLoginBinding.inflate(layoutInflater)
+            setContentView(binding.root)
+            
+            setupClickListeners()
+            observeViewModel()
+        } catch (e: Exception) {
+            Log.e("LoginActivity", "Error in onCreate", e)
+            Toast.makeText(this, "Error loading login screen", Toast.LENGTH_SHORT).show()
+        }
     }
     
     private fun setupClickListeners() {
@@ -92,16 +72,18 @@ class LoginActivity : AppCompatActivity() {
         
         // Google Sign In
         binding.btnGoogle.setOnClickListener {
-            val signInIntent = googleSignInClient.signInIntent
-            googleSignInLauncher.launch(signInIntent)
+            try {
+                val signInIntent = googleSignInClient.signInIntent
+                googleSignInLauncher.launch(signInIntent)
+            } catch (e: Exception) {
+                Log.e("LoginActivity", "Google sign in error", e)
+                Toast.makeText(this, "Google Sign-In not available", Toast.LENGTH_SHORT).show()
+            }
         }
         
-        // Facebook Sign In
+        // Facebook Sign In - Disabled for now
         binding.btnFacebook.setOnClickListener {
-            LoginManager.getInstance().logInWithReadPermissions(
-                this,
-                listOf("email", "public_profile")
-            )
+            Toast.makeText(this, "Facebook login coming soon", Toast.LENGTH_SHORT).show()
         }
         
         // Forgot Password
@@ -161,11 +143,5 @@ class LoginActivity : AppCompatActivity() {
                 }
             }
         }
-    }
-    
-    @Deprecated("Deprecated in Java")
-    override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
-        super.onActivityResult(requestCode, resultCode, data)
-        callbackManager.onActivityResult(requestCode, resultCode, data)
     }
 }

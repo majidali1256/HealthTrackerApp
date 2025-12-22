@@ -90,7 +90,7 @@
             android:exported="false"
             android:theme="@style/Theme.HealthTracker" />
 
-        <!-- Facebook Login -->
+        <!-- Facebook Login - Disabled until configured
         <meta-data
             android:name="com.facebook.sdk.ApplicationId"
             android:value="@string/facebook_app_id" />
@@ -102,6 +102,7 @@
             android:name="com.facebook.FacebookActivity"
             android:configChanges="keyboard|keyboardHidden|screenLayout|screenSize|orientation"
             android:label="@string/app_name" />
+        -->
 
         <!-- Boot Receiver for Medication Reminders -->
         <receiver

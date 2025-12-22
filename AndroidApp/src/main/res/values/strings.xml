@@ -94,5 +94,5 @@
     <string name="facebook_client_token">YOUR_FACEBOOK_CLIENT_TOKEN</string>
     
     <!-- Google Sign-In (Placeholder - From Firebase) -->
-    <string name="default_web_client_id">YOUR_WEB_CLIENT_ID.apps.googleusercontent.com</string>
+    <string name="default_web_client_id">1060381981190-i90cqc4t936vdaf87pbm7kr69dg4ocog.apps.googleusercontent.com</string>
 </resources>

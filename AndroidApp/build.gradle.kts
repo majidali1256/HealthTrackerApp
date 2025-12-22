@@ -82,8 +82,8 @@ dependencies {
     // Google Sign-In
     implementation("com.google.android.gms:play-services-auth:20.7.0")
     
-    // Facebook Login
-    implementation("com.facebook.android:facebook-login:16.3.0")
+    // Facebook Login - Disabled until configured
+    // implementation("com.facebook.android:facebook-login:16.3.0")
     
     // Coroutines
     implementation("org.jetbrains.kotlinx:kotlinx-coroutines-android:1.7.3")

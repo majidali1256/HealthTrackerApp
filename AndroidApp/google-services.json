@@ -12,7 +12,20 @@
           "package_name": "com.healthtracker.app"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1060381981190-ivdss4p790rdch3qva7nlnstn2fa3j3l.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.healthtracker.app",
+            "certificate_hash": "11e13b73bfbbaedf3f9be5d7a17e6d6c0699a5b9"
+          }
+        },
+        {
+          "client_id": "1060381981190-i90cqc4t936vdaf87pbm7kr69dg4ocog.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyDtFxafHh5YHSDTw03dVJrrHnl_eE1ZQgU"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1060381981190-i90cqc4t936vdaf87pbm7kr69dg4ocog.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }

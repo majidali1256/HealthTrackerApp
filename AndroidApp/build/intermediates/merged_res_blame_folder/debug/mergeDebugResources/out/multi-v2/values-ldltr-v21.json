@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/values-ldltr-v21/values-ldltr-v21.xml",
+            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-71:/values-ldltr-v21/values-ldltr-v21.xml",
             "map": [
                 {
                     "source": "/Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/res/values-ldltr-v21/values-ldltr-v21.xml",

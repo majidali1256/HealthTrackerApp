@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-185:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-185:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-185:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-185:12
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
 MERGED from [androidx.databinding:databinding-adapters:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/8d0aeded26a59666698bdedee6f1a076/transformed/databinding-adapters-8.7.3/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/941ca4170185eafcfc3f4bab1a584dc6/transformed/databinding-ktx-8.7.3/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/1018799ae2cfe9b0330598e98ed333bc/transformed/databinding-runtime-8.7.3/AndroidManifest.xml:2:1-7:12
@@ -18,7 +18,6 @@ MERGED from [androidx.navigation:navigation-ui-ktx:2.7.6] /Users/macbookair/.gra
 MERGED from [androidx.navigation:navigation-ui:2.7.6] /Users/macbookair/.gradle/caches/8.9/transforms/237b45b8368d33e6239bf6b25a072ae0/transformed/navigation-ui-2.7.6/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
-MERGED from [com.facebook.android:facebook-login:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/AndroidManifest.xml:9:1-19:12
 MERGED from [androidx.camera:camera-video:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/2a312a61438a7aa4fad464840754cf0f/transformed/camera-video-1.3.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:17:1-34:12
 MERGED from [androidx.camera:camera-lifecycle:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/86ed8c9932582cc7cfc83f2f1f789078/transformed/camera-lifecycle-1.3.1/AndroidManifest.xml:2:1-7:12
@@ -28,7 +27,6 @@ MERGED from [androidx.camera:camera-view:1.3.1] /Users/macbookair/.gradle/caches
 MERGED from [io.coil-kt:coil:2.5.0] /Users/macbookair/.gradle/caches/8.9/transforms/173c7d14afcb2f9f50ec4fa1525a5b30/transformed/coil-2.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [io.coil-kt:coil-base:2.5.0] /Users/macbookair/.gradle/caches/8.9/transforms/1e0cf8da329aacfcb56a887056158fdd/transformed/coil-base-2.5.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/4c64ba9d521b838cc3ffbd98bfafb296/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:9:1-44:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [com.google.dagger:hilt-android:2.52] /Users/macbookair/.gradle/caches/8.9/transforms/c0fa9d2c201e749b01a835fddfacd7e1/transformed/hilt-android-2.52/AndroidManifest.xml:16:1-19:12
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/737957ee4d4ba52996b6518983c5ed07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:17:1-40:12
@@ -55,14 +53,11 @@ MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair
 MERGED from [androidx.activity:activity:1.8.2] /Users/macbookair/.gradle/caches/8.9/transforms/73c5f5c64bc19c3b34a166fdb7cc1c2c/transformed/activity-1.8.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/e8c1d13be6744bf8682b1befd4a4ff18/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:17:1-35:12
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/21461ded2902ef65b15a86bab6ecf48f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/bc95b15d1997fc54553e555b17858fcb/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/macbookair/.gradle/caches/8.9/transforms/1c0d7b86e14866eaa1e0e8511adac1fd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/d4cefc8ac7f5002bb55658a0e6db5a05/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.dynamicanimation:dynamicanimation:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/5d9c7d28ef9d40209ed02ad239765d6a/transformed/dynamicanimation-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/bb51943bc2904437fef44f52f39c90ea/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/07a970fa4483979760ff0c172af7a48f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
-MERGED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:9:1-50:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/ac96c7309e54bc44039f46a04cd5d412/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/95c396f7baf21d7524a336e98a714606/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/f319bf8ad8b47f60baacdaad1cf2e053/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
@@ -72,9 +67,6 @@ MERGED from [androidx.customview:customview:1.1.0] /Users/macbookair/.gradle/cac
 MERGED from [androidx.browser:browser:1.4.0] /Users/macbookair/.gradle/caches/8.9/transforms/b4d09c0b745c9498d9c144142416d613/transformed/browser-1.4.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.transition:transition:1.4.1] /Users/macbookair/.gradle/caches/8.9/transforms/67172082071f640aa466cd9714a8d237/transformed/transition-1.4.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:17:1-33:12
-MERGED from [androidx.media:media:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/535f9d5685a1b4ab0a65dd9471be283a/transformed/media-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/b28d00b8dd2cdb240cb240aa37353bcb/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fb55c72c562d3ede79d0a87299368695/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.core:core:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/621590b4842d472bb4d57f220764829e/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel-savedstate:2.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/d2f61415cd2bc7c6a2b391408b969fbf/transformed/lifecycle-viewmodel-savedstate-2.7.0/AndroidManifest.xml:17:1-22:12
@@ -104,7 +96,6 @@ MERGED from [com.google.android.gms:play-services-basement:18.2.0] /Users/macboo
 MERGED from [androidx.fragment:fragment:1.6.2] /Users/macbookair/.gradle/caches/8.9/transforms/0c536e8d3515d7c666e905c31dc0b64d/transformed/fragment-1.6.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/macbookair/.gradle/caches/8.9/transforms/e3e4273674cc93f12d021484b1122ea5/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/macbookair/.gradle/caches/8.9/transforms/7b8f4b649a007313b34a2f0308a39ee3/transformed/activity-ktx-1.8.2/AndroidManifest.xml:2:1-7:12
-MERGED from [com.facebook.android:facebook-bolts:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8ad54b6d65ebb990649ecb0ba12763e9/transformed/facebook-bolts-16.3.0/AndroidManifest.xml:9:1-19:12
 MERGED from [androidx.core:core-ktx:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/4a4440b74ab7be95901579ba10d9a21f/transformed/core-ktx-1.12.0/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/macbookair/.gradle/caches/8.9/transforms/f9cec01970433487a0c441d3fd7d5b61/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/macbookair/.gradle/caches/8.9/transforms/f94d7a3a4a66949932c885033f3c0ec5/transformed/sqlite-framework-2.4.0/AndroidManifest.xml:17:1-22:12
@@ -131,7 +122,6 @@ MERGED from [androidx.print:print:1.0.0] /Users/macbookair/.gradle/caches/8.9/tr
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/2440d71a02b212134f1a1d0db48da932/transformed/circleimageview-3.1.0/AndroidManifest.xml:2:1-11:12
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookair/.gradle/caches/8.9/transforms/7f358b2a6c4a0c6f5aa28206b43a655e/transformed/grpc-android-1.52.1/AndroidManifest.xml:2:1-11:12
 MERGED from [com.google.dagger:dagger-lint-aar:2.52] /Users/macbookair/.gradle/caches/8.9/transforms/d2078461b3ea82447ca8d7ebe372e474/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:16:1-19:12
-MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:2:1-13:12
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradle/caches/8.9/transforms/942160a2a771119aa7ced262263a55f0/transformed/image-1.0.0-beta1/AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/0aae48d044df89b43aad3c5edb6713e3/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:2:1-11:12
 	package
@@ -253,22 +243,18 @@ ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:26:19-63
 application
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-183:19
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-183:19
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-184:19
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-184:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
-MERGED from [com.facebook.android:facebook-login:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/AndroidManifest.xml:16:5-17:19
-MERGED from [com.facebook.android:facebook-login:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/AndroidManifest.xml:16:5-17:19
 MERGED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:28:5-32:19
 MERGED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:28:5-32:19
 MERGED from [androidx.camera:camera-camera2:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/a43c7fd80f4dd032f157e286be613f99/transformed/camera-camera2-1.3.1/AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.camera:camera-camera2:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/a43c7fd80f4dd032f157e286be613f99/transformed/camera-camera2-1.3.1/AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.camera:camera-core:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/ed181cb35e29e3a0ef33b982bd3ca464/transformed/camera-core-1.3.1/AndroidManifest.xml:23:5-34:19
 MERGED from [androidx.camera:camera-core:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/ed181cb35e29e3a0ef33b982bd3ca464/transformed/camera-core-1.3.1/AndroidManifest.xml:23:5-34:19
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:21:5-42:19
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:21:5-42:19
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/737957ee4d4ba52996b6518983c5ed07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-auth:20.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/737957ee4d4ba52996b6518983c5ed07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:22:5-38:19
 MERGED from [com.google.android.gms:play-services-location:21.0.1] /Users/macbookair/.gradle/caches/8.9/transforms/41426823fd9ad4d2b54252f5ddbc3eed/transformed/play-services-location-21.0.1/AndroidManifest.xml:7:5-20
@@ -301,8 +287,6 @@ MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/0d76d1b6ca152889d125401bc33a72e7/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
-MERGED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:18:5-48:19
-MERGED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:18:5-48:19
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
@@ -323,8 +307,6 @@ MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/macbookai
 MERGED from [com.google.android.gms:play-services-tasks:18.0.2] /Users/macbookair/.gradle/caches/8.9/transforms/596733581565f162b2f8643f65020761/transformed/play-services-tasks-18.0.2/AndroidManifest.xml:5:5-20
 MERGED from [com.google.android.gms:play-services-basement:18.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/31cc67ef36745e11c19aa2afd6139922/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
 MERGED from [com.google.android.gms:play-services-basement:18.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/31cc67ef36745e11c19aa2afd6139922/transformed/play-services-basement-18.2.0/AndroidManifest.xml:20:5-24:19
-MERGED from [com.facebook.android:facebook-bolts:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8ad54b6d65ebb990649ecb0ba12763e9/transformed/facebook-bolts-16.3.0/AndroidManifest.xml:16:5-17:19
-MERGED from [com.facebook.android:facebook-bolts:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8ad54b6d65ebb990649ecb0ba12763e9/transformed/facebook-bolts-16.3.0/AndroidManifest.xml:16:5-17:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/macbookair/.gradle/caches/8.9/transforms/4ddc8683ce7daaf09e5cbad6d733fc68/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/macbookair/.gradle/caches/8.9/transforms/4ddc8683ce7daaf09e5cbad6d733fc68/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/198c53ac6b798b5e31bd87d821525841/transformed/profileinstaller-1.3.1/AndroidManifest.xml:23:5-53:19
@@ -337,8 +319,6 @@ MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/ma
 MERGED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/macbookair/.gradle/caches/8.9/transforms/19a5e7fa9d4588150d3935edb83832cb/transformed/transport-runtime-2.2.6/AndroidManifest.xml:25:5-39:19
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/2440d71a02b212134f1a1d0db48da932/transformed/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/2440d71a02b212134f1a1d0db48da932/transformed/circleimageview-3.1.0/AndroidManifest.xml:9:5-20
-MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:11:5-20
-MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:11:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradle/caches/8.9/transforms/942160a2a771119aa7ced262263a55f0/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradle/caches/8.9/transforms/942160a2a771119aa7ced262263a55f0/transformed/image-1.0.0-beta1/AndroidManifest.xml:7:5-20
 	android:extractNativeLibs
@@ -441,132 +421,108 @@ ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:91:13-55
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:89:13-56
-meta-data#com.facebook.sdk.ApplicationId
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:94:9-96:55
-	android:value
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:96:13-52
-	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:95:13-58
-meta-data#com.facebook.sdk.ClientToken
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:97:9-99:61
-	android:value
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:99:13-58
-	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:98:13-56
-activity#com.facebook.FacebookActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:101:9-104:48
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:22:9-25:66
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:22:9-25:66
-	android:label
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:104:13-45
-	android:configChanges
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:103:13-96
-	android:theme
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:25:13-63
-	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:102:13-57
 receiver#com.healthtracker.app.receivers.BootReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:107:9-113:20
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:108:9-114:20
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:109:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:110:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:108:13-51
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:109:13-51
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:110:13-112:29
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:111:13-113:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:111:17-79
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:112:17-79
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:111:25-76
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:112:25-76
 receiver#com.healthtracker.app.receivers.MedicationReminderReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:116:9-118:40
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:117:9-119:40
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:118:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:119:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:117:13-65
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:118:13-65
 service#com.healthtracker.app.services.StepCounterService
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:121:9-128:19
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:122:9-129:19
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:123:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:124:13-37
 	android:foregroundServiceType
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:124:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:125:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:122:13-56
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:123:13-56
 property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:125:13-127:49
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:126:13-128:49
 	android:value
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:127:17-46
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:128:17-46
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:126:17-76
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:127:17-76
 service#com.healthtracker.app.services.EmergencySOSService
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:131:9-134:56
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:132:9-135:56
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:133:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:134:13-37
 	android:foregroundServiceType
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:134:13-53
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:135:13-53
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:132:13-57
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:133:13-57
 activity#com.healthtracker.app.ui.sleep.SleepAnalysisActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:137:9-140:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:138:9-141:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:139:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:140:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:140:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:141:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:138:13-59
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:139:13-59
 activity#com.healthtracker.app.ui.tools.ToolsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:143:9-146:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:144:9-147:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:145:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:146:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:146:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:147:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:144:13-51
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:145:13-51
 activity#com.healthtracker.app.ui.documents.DocumentVaultActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:149:9-152:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:150:9-153:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:151:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:152:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:152:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:153:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:150:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:151:13-63
 activity#com.healthtracker.app.ui.food.FoodLoggerActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:155:9-158:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:156:9-159:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:157:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:158:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:158:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:159:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:156:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:157:13-55
 activity#com.healthtracker.app.ui.symptoms.SymptomCheckerActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:161:9-164:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:162:9-165:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:163:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:164:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:164:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:165:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:162:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:163:13-63
 activity#com.healthtracker.app.ui.medications.MedicationsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:167:9-170:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:168:9-171:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:169:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:170:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:170:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:171:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:168:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:169:13-63
 activity#com.healthtracker.app.ui.trends.TrendsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:173:9-176:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:174:9-177:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:175:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:176:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:176:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:177:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:174:13-53
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:175:13-53
 receiver#com.healthtracker.app.receivers.MedicationActionReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:179:9-181:40
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:180:9-182:40
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:181:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:182:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:180:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:181:13-63
 uses-sdk
 INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml
@@ -599,8 +555,6 @@ MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gra
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:5:5-7:41
-MERGED from [com.facebook.android:facebook-login:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/AndroidManifest.xml:12:5-14:41
-MERGED from [com.facebook.android:facebook-login:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/43445966501f405b1937b54c8d43cf39/transformed/facebook-login-16.3.0/AndroidManifest.xml:12:5-14:41
 MERGED from [androidx.camera:camera-video:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/2a312a61438a7aa4fad464840754cf0f/transformed/camera-video-1.3.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.camera:camera-video:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/2a312a61438a7aa4fad464840754cf0f/transformed/camera-video-1.3.1/AndroidManifest.xml:5:5-44
 MERGED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:20:5-44
@@ -619,8 +573,6 @@ MERGED from [io.coil-kt:coil-base:2.5.0] /Users/macbookair/.gradle/caches/8.9/tr
 MERGED from [io.coil-kt:coil-base:2.5.0] /Users/macbookair/.gradle/caches/8.9/transforms/1e0cf8da329aacfcb56a887056158fdd/transformed/coil-base-2.5.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/4c64ba9d521b838cc3ffbd98bfafb296/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/4c64ba9d521b838cc3ffbd98bfafb296/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:13:5-15:41
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:13:5-15:41
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/macbookair/.gradle/caches/8.9/transforms/8d70818c3645607f851c79bcc31dc395/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [com.google.dagger:hilt-android:2.52] /Users/macbookair/.gradle/caches/8.9/transforms/c0fa9d2c201e749b01a835fddfacd7e1/transformed/hilt-android-2.52/AndroidManifest.xml:18:3-42
@@ -673,10 +625,6 @@ MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/macbookair/.gradl
 MERGED from [androidx.emoji2:emoji2-views-helper:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/e8c1d13be6744bf8682b1befd4a4ff18/transformed/emoji2-views-helper-1.2.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:21:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/21461ded2902ef65b15a86bab6ecf48f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/21461ded2902ef65b15a86bab6ecf48f/transformed/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/bc95b15d1997fc54553e555b17858fcb/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/bc95b15d1997fc54553e555b17858fcb/transformed/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/macbookair/.gradle/caches/8.9/transforms/1c0d7b86e14866eaa1e0e8511adac1fd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.drawerlayout:drawerlayout:1.1.1] /Users/macbookair/.gradle/caches/8.9/transforms/1c0d7b86e14866eaa1e0e8511adac1fd/transformed/drawerlayout-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/d4cefc8ac7f5002bb55658a0e6db5a05/transformed/coordinatorlayout-1.1.0/AndroidManifest.xml:20:5-22:41
@@ -687,8 +635,6 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/macbo
 MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/bb51943bc2904437fef44f52f39c90ea/transformed/vectordrawable-animated-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/07a970fa4483979760ff0c172af7a48f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/07a970fa4483979760ff0c172af7a48f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:20:5-22:41
-MERGED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:12:5-14:41
-MERGED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:12:5-14:41
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/ac96c7309e54bc44039f46a04cd5d412/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/ac96c7309e54bc44039f46a04cd5d412/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/95c396f7baf21d7524a336e98a714606/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
@@ -707,12 +653,6 @@ MERGED from [androidx.transition:transition:1.4.1] /Users/macbookair/.gradle/cac
 MERGED from [androidx.transition:transition:1.4.1] /Users/macbookair/.gradle/caches/8.9/transforms/67172082071f640aa466cd9714a8d237/transformed/transition-1.4.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/535f9d5685a1b4ab0a65dd9471be283a/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/535f9d5685a1b4ab0a65dd9471be283a/transformed/media-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/b28d00b8dd2cdb240cb240aa37353bcb/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/b28d00b8dd2cdb240cb240aa37353bcb/transformed/swiperefreshlayout-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fb55c72c562d3ede79d0a87299368695/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
-MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fb55c72c562d3ede79d0a87299368695/transformed/asynclayoutinflater-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/621590b4842d472bb4d57f220764829e/transformed/lifecycle-livedata-core-2.7.0/AndroidManifest.xml:20:5-44
@@ -771,8 +711,6 @@ MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/macbookair/.gradle/cac
 MERGED from [androidx.fragment:fragment-ktx:1.6.2] /Users/macbookair/.gradle/caches/8.9/transforms/e3e4273674cc93f12d021484b1122ea5/transformed/fragment-ktx-1.6.2/AndroidManifest.xml:20:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/macbookair/.gradle/caches/8.9/transforms/7b8f4b649a007313b34a2f0308a39ee3/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
 MERGED from [androidx.activity:activity-ktx:1.8.2] /Users/macbookair/.gradle/caches/8.9/transforms/7b8f4b649a007313b34a2f0308a39ee3/transformed/activity-ktx-1.8.2/AndroidManifest.xml:5:5-44
-MERGED from [com.facebook.android:facebook-bolts:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8ad54b6d65ebb990649ecb0ba12763e9/transformed/facebook-bolts-16.3.0/AndroidManifest.xml:12:5-14:41
-MERGED from [com.facebook.android:facebook-bolts:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8ad54b6d65ebb990649ecb0ba12763e9/transformed/facebook-bolts-16.3.0/AndroidManifest.xml:12:5-14:41
 MERGED from [androidx.core:core-ktx:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/4a4440b74ab7be95901579ba10d9a21f/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-ktx:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/4a4440b74ab7be95901579ba10d9a21f/transformed/core-ktx-1.12.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core-splashscreen:1.0.1] /Users/macbookair/.gradle/caches/8.9/transforms/f9cec01970433487a0c441d3fd7d5b61/transformed/core-splashscreen-1.0.1/AndroidManifest.xml:20:5-22:41
@@ -825,8 +763,6 @@ MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookair/.gradle/caches/8.9/t
 MERGED from [io.grpc:grpc-android:1.52.1] /Users/macbookair/.gradle/caches/8.9/transforms/7f358b2a6c4a0c6f5aa28206b43a655e/transformed/grpc-android-1.52.1/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.dagger:dagger-lint-aar:2.52] /Users/macbookair/.gradle/caches/8.9/transforms/d2078461b3ea82447ca8d7ebe372e474/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:18:3-42
 MERGED from [com.google.dagger:dagger-lint-aar:2.52] /Users/macbookair/.gradle/caches/8.9/transforms/d2078461b3ea82447ca8d7ebe372e474/transformed/dagger-lint-aar-2.52/AndroidManifest.xml:18:3-42
-MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:5:5-7:41
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradle/caches/8.9/transforms/942160a2a771119aa7ced262263a55f0/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradle/caches/8.9/transforms/942160a2a771119aa7ced262263a55f0/transformed/image-1.0.0-beta1/AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/0aae48d044df89b43aad3c5edb6713e3/transformed/protolite-well-known-types-18.0.0/AndroidManifest.xml:7:5-9:41
@@ -839,8 +775,6 @@ MERGED from [com.google.firebase:protolite-well-known-types:18.0.0] /Users/macbo
 		INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml
 queries
 ADDED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:22:5-26:15
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:17:5-19:15
-MERGED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:17:5-19:15
 intent#action:name:androidx.camera.extensions.action.VENDOR_ACTION
 ADDED from [androidx.camera:camera-extensions:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/9b9218b9ca724c945bfe63871650b180/transformed/camera-extensions-1.3.1/AndroidManifest.xml:23:9-25:18
 action#androidx.camera.extensions.action.VENDOR_ACTION
@@ -873,44 +807,6 @@ ADDED from [androidx.camera:camera-camera2:1.3.1] /Users/macbookair/.gradle/cach
 		ADDED from [androidx.camera:camera-camera2:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/a43c7fd80f4dd032f157e286be613f99/transformed/camera-camera2-1.3.1/AndroidManifest.xml:32:17-86
 	android:name
 		ADDED from [androidx.camera:camera-camera2:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/a43c7fd80f4dd032f157e286be613f99/transformed/camera-camera2-1.3.1/AndroidManifest.xml:31:17-103
-package#com.facebook.katana
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:18:9-55
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:18:18-52
-activity#com.facebook.CustomTabMainActivity
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:26:9-71
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:26:19-68
-activity#com.facebook.CustomTabActivity
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:27:9-41:20
-	tools:node
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:30:13-31
-	android:exported
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:29:13-36
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:28:13-58
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.${applicationId}+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:31:13-40:29
-intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:cct.com.healthtracker.app+data:scheme:fbconnect
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:31:13-40:29
-action#android.intent.action.VIEW
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:32:17-69
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:32:25-66
-category#android.intent.category.DEFAULT
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:34:17-76
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:34:27-73
-category#android.intent.category.BROWSABLE
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:35:17-78
-	android:name
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:35:27-75
-data
-ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:37:17-39:50
-	android:host
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:38:21-56
-	android:scheme
-		ADDED from [com.facebook.android:facebook-common:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/ffdc434718f1a071ae20022fb6156851/transformed/facebook-common-16.3.0/AndroidManifest.xml:39:21-47
 activity#com.google.android.gms.auth.api.signin.internal.SignInHubActivity
 ADDED from [com.google.android.gms:play-services-auth:20.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/737957ee4d4ba52996b6518983c5ed07/transformed/play-services-auth-20.7.0/AndroidManifest.xml:23:9-27:75
 	android:excludeFromRecents
@@ -977,6 +873,26 @@ ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/
 		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:30:13-80
 intent-filter#action:name:android.intent.action.VIEW+category:name:android.intent.category.BROWSABLE+category:name:android.intent.category.DEFAULT+data:host:firebase.auth+data:path:/+data:scheme:genericidp
 ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:35:13-45:29
+action#android.intent.action.VIEW
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:17-69
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:36:25-66
+category#android.intent.category.DEFAULT
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:17-76
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:38:27-73
+category#android.intent.category.BROWSABLE
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:17-78
+	android:name
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:39:27-75
+data
+ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:41:17-44:51
+	android:path
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:43:21-37
+	android:host
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:42:21-49
+	android:scheme
+		ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:44:21-48
 activity#com.google.firebase.auth.internal.RecaptchaActivity
 ADDED from [com.google.firebase:firebase-auth:22.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/eac0740a7b417be6b9eb60c2dd13d7f7/transformed/firebase-auth-22.3.0/AndroidManifest.xml:47:9-64:20
 	android:excludeFromRecents
@@ -1117,42 +1033,6 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/t
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
-uses-permission#com.google.android.gms.permission.AD_ID
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:16:5-79
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:16:22-76
-provider#com.facebook.internal.FacebookInitProvider
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:29:9-32:40
-	android:authorities
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:31:13-72
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:32:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:30:13-70
-receiver#com.facebook.CurrentAccessTokenExpirationBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:34:9-40:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:36:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:35:13-86
-intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:37:13-39:29
-action#com.facebook.sdk.ACTION_CURRENT_ACCESS_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:38:17-95
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:38:25-92
-receiver#com.facebook.AuthenticationTokenManager$CurrentAuthenticationTokenChangedBroadcastReceiver
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:41:9-47:20
-	android:exported
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:43:13-37
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:42:13-118
-intent-filter#action:name:com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:44:13-46:29
-action#com.facebook.sdk.ACTION_CURRENT_AUTHENTICATION_TOKEN_CHANGED
-ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:45:17-103
-	android:name
-		ADDED from [com.facebook.android:facebook-core:16.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/20f0442b4e57bb00d6fc3958e5a5f7b9/transformed/facebook-core-16.3.0/AndroidManifest.xml:45:25-100
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
 	android:required
@@ -1301,7 +1181,3 @@ ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/mac
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/macbookair/.gradle/caches/8.9/transforms/19a5e7fa9d4588150d3935edb83832cb/transformed/transport-runtime-2.2.6/AndroidManifest.xml:34:13-37
 	android:name
 		ADDED from [com.google.android.datatransport:transport-runtime:2.2.6] /Users/macbookair/.gradle/caches/8.9/transforms/19a5e7fa9d4588150d3935edb83832cb/transformed/transport-runtime-2.2.6/AndroidManifest.xml:33:13-132
-uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
-ADDED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:9:5-110
-	android:name
-		ADDED from [com.android.installreferrer:installreferrer:1.0] /Users/macbookair/.gradle/caches/8.9/transforms/5e5d0d897a249a942e573ce512937a3c/transformed/installreferrer-1.0/AndroidManifest.xml:9:22-107
