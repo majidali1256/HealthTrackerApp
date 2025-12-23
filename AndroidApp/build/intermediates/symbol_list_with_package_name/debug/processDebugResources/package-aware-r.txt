@@ -1389,7 +1389,11 @@ attr yearStyle
 attr yearTodayStyle
 bool abc_action_bar_embed_tabs
 bool abc_config_actionMenuItemAllCaps
+bool enable_system_alarm_service_default
+bool enable_system_foreground_service_default
+bool enable_system_job_service_default
 bool mtrl_btn_textappearance_all_caps
+bool workmanager_test_configuration
 color abc_background_cache_hint_selector_material_dark
 color abc_background_cache_hint_selector_material_light
 color abc_btn_colored_borderless_text_material
@@ -2262,6 +2266,7 @@ color steps_teal_light
 color success_green
 color success_green_dark
 color success_green_light
+color surface
 color surface_card
 color surface_elevated
 color surface_white
@@ -3621,17 +3626,23 @@ id etAllergies
 id etBloodType
 id etConfirmPassword
 id etDateOfBirth
+id etDiastolic
 id etDoctorName
 id etDoctorPhone
 id etEmail
 id etEmergencyContact
 id etEmergencyPhone
 id etFullName
+id etGlucose
+id etHeartRate
 id etHeight
 id etMedicalConditions
 id etMedications
 id etNotes
 id etPassword
+id etSpO2
+id etSystolic
+id etTemperature
 id etWeight
 id exitUntilCollapsed
 id expand_activities_button
@@ -3936,6 +3947,7 @@ id submit_area
 id supportScrollUp
 id switchAnalytics
 id switchDailyReminders
+id switchDarkMode
 id switchMedAlerts
 id switchNotifications
 id switchShareDoctor
@@ -4225,6 +4237,7 @@ layout abc_tooltip
 layout activity_dashboard
 layout activity_document_vault
 layout activity_food_logger
+layout activity_log_vitals
 layout activity_login
 layout activity_medical_id
 layout activity_medications
@@ -5922,5 +5935,6 @@ styleable ViewTransition android_id SharedValue SharedValueId clearsTag duration
 styleable include constraintSet
 xml backup_rules
 xml data_extraction_rules
+xml file_provider_paths
 xml image_share_filepaths
 xml network_security_config

@@ -118,6 +118,15 @@ dependencies {
     // Splash Screen
     implementation("androidx.core:core-splashscreen:1.0.1")
     
+    // Charts/Graphs
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
+    
+    // PDF Generation
+    implementation("com.itextpdf:itext7-core:7.2.5")
+    
+    // WorkManager for scheduled notifications
+    implementation("androidx.work:work-runtime-ktx:2.9.0")
+    
     // Testing
     testImplementation("junit:junit:4.13.2")
     testImplementation("org.jetbrains.kotlinx:kotlinx-coroutines-test:1.7.3")

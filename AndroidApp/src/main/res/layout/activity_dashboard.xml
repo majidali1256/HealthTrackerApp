@@ -207,7 +207,7 @@
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/cardSleep"
                         android:layout_width="0dp"
-                        android:layout_height="120dp"
+                        android:layout_height="@dimen/metric_card_height"
                         android:layout_marginHorizontal="4dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@android:color/transparent"
@@ -253,7 +253,7 @@
                     <com.google.android.material.card.MaterialCardView
                         android:id="@+id/cardHydration"
                         android:layout_width="0dp"
-                        android:layout_height="120dp"
+                        android:layout_height="@dimen/metric_card_height"
                         android:layout_marginStart="8dp"
                         android:layout_weight="1"
                         app:cardBackgroundColor="@android:color/transparent"

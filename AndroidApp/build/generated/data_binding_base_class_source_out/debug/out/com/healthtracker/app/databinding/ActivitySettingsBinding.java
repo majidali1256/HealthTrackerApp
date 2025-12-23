@@ -35,6 +35,9 @@ public abstract class ActivitySettingsBinding extends ViewDataBinding {
   public final MaterialSwitch switchDailyReminders;
 
   @NonNull
+  public final MaterialSwitch switchDarkMode;
+
+  @NonNull
   public final MaterialSwitch switchMedAlerts;
 
   @NonNull
@@ -49,8 +52,9 @@ public abstract class ActivitySettingsBinding extends ViewDataBinding {
   protected ActivitySettingsBinding(Object _bindingComponent, View _root, int _localFieldCount,
       ImageButton btnBack, LinearLayout rowDeleteData, LinearLayout rowPrivacyPolicy,
       LinearLayout rowTerms, MaterialSwitch switchAnalytics, MaterialSwitch switchDailyReminders,
-      MaterialSwitch switchMedAlerts, MaterialSwitch switchShareDoctor,
-      MaterialSwitch switchStepGoal, MaterialSwitch switchWaterReminders) {
+      MaterialSwitch switchDarkMode, MaterialSwitch switchMedAlerts,
+      MaterialSwitch switchShareDoctor, MaterialSwitch switchStepGoal,
+      MaterialSwitch switchWaterReminders) {
     super(_bindingComponent, _root, _localFieldCount);
     this.btnBack = btnBack;
     this.rowDeleteData = rowDeleteData;
@@ -58,6 +62,7 @@ public abstract class ActivitySettingsBinding extends ViewDataBinding {
     this.rowTerms = rowTerms;
     this.switchAnalytics = switchAnalytics;
     this.switchDailyReminders = switchDailyReminders;
+    this.switchDarkMode = switchDarkMode;
     this.switchMedAlerts = switchMedAlerts;
     this.switchShareDoctor = switchShareDoctor;
     this.switchStepGoal = switchStepGoal;

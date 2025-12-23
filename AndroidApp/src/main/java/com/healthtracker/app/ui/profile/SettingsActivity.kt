@@ -4,8 +4,11 @@ import android.os.Bundle
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatDelegate
 import com.healthtracker.app.R
 import com.healthtracker.app.databinding.ActivitySettingsBinding
+import com.healthtracker.app.services.StepCounterService
+import com.healthtracker.app.utils.HydrationReminderWorker
 import dagger.hilt.android.AndroidEntryPoint
 
 @AndroidEntryPoint
@@ -19,6 +22,7 @@ class SettingsActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         setupClickListeners()
+        setupSwitchListeners()
         loadSettings()
     }
 
@@ -41,6 +45,47 @@ class SettingsActivity : AppCompatActivity() {
             Toast.makeText(this, "Opening Terms of Service...", Toast.LENGTH_SHORT).show()
         }
     }
+    
+    private fun setupSwitchListeners() {
+        // Water reminders toggle
+        binding.switchWaterReminders.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                HydrationReminderWorker.schedule(this)
+                Toast.makeText(this, "Water reminders enabled (every 2 hours)", Toast.LENGTH_SHORT).show()
+            } else {
+                HydrationReminderWorker.cancel(this)
+                Toast.makeText(this, "Water reminders disabled", Toast.LENGTH_SHORT).show()
+            }
+        }
+        
+        // Step counter toggle  
+        binding.switchStepGoal.setOnCheckedChangeListener { _, isChecked ->
+            if (isChecked) {
+                StepCounterService.start(this)
+                Toast.makeText(this, "Step counter started", Toast.LENGTH_SHORT).show()
+            } else {
+                StepCounterService.stop(this)
+                Toast.makeText(this, "Step counter stopped", Toast.LENGTH_SHORT).show()
+            }
+        }
+        
+        // Dark mode toggle
+        binding.switchDarkMode.setOnCheckedChangeListener { _, isChecked ->
+            val prefs = getSharedPreferences("settings", MODE_PRIVATE)
+            prefs.edit().putBoolean("dark_mode", isChecked).apply()
+            
+            AppCompatDelegate.setDefaultNightMode(
+                if (isChecked) AppCompatDelegate.MODE_NIGHT_YES 
+                else AppCompatDelegate.MODE_NIGHT_NO
+            )
+            
+            Toast.makeText(
+                this, 
+                if (isChecked) "Dark mode enabled" else "Light mode enabled",
+                Toast.LENGTH_SHORT
+            ).show()
+        }
+    }
 
     private fun loadSettings() {
         val prefs = getSharedPreferences("settings", MODE_PRIVATE)
@@ -50,6 +95,10 @@ class SettingsActivity : AppCompatActivity() {
         binding.switchWaterReminders.isChecked = prefs.getBoolean("water_reminders", false)
         binding.switchShareDoctor.isChecked = prefs.getBoolean("share_doctor", false)
         binding.switchAnalytics.isChecked = prefs.getBoolean("analytics", true)
+        
+        // Load dark mode preference
+        val isDarkMode = prefs.getBoolean("dark_mode", false)
+        binding.switchDarkMode.isChecked = isDarkMode
     }
 
     private fun saveSettings() {
@@ -61,6 +110,7 @@ class SettingsActivity : AppCompatActivity() {
             putBoolean("water_reminders", binding.switchWaterReminders.isChecked)
             putBoolean("share_doctor", binding.switchShareDoctor.isChecked)
             putBoolean("analytics", binding.switchAnalytics.isChecked)
+            putBoolean("dark_mode", binding.switchDarkMode.isChecked)
             apply()
         }
         Toast.makeText(this, "Settings saved", Toast.LENGTH_SHORT).show()

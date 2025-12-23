@@ -19,11 +19,12 @@ public class ActivitySettingsBindingImpl extends ActivitySettingsBinding  {
         sViewsWithIds.put(R.id.switchMedAlerts, 3);
         sViewsWithIds.put(R.id.switchStepGoal, 4);
         sViewsWithIds.put(R.id.switchWaterReminders, 5);
-        sViewsWithIds.put(R.id.switchShareDoctor, 6);
-        sViewsWithIds.put(R.id.switchAnalytics, 7);
-        sViewsWithIds.put(R.id.rowDeleteData, 8);
-        sViewsWithIds.put(R.id.rowPrivacyPolicy, 9);
-        sViewsWithIds.put(R.id.rowTerms, 10);
+        sViewsWithIds.put(R.id.switchDarkMode, 6);
+        sViewsWithIds.put(R.id.switchShareDoctor, 7);
+        sViewsWithIds.put(R.id.switchAnalytics, 8);
+        sViewsWithIds.put(R.id.rowDeleteData, 9);
+        sViewsWithIds.put(R.id.rowPrivacyPolicy, 10);
+        sViewsWithIds.put(R.id.rowTerms, 11);
     }
     // views
     @NonNull
@@ -34,18 +35,19 @@ public class ActivitySettingsBindingImpl extends ActivitySettingsBinding  {
     // Inverse Binding Event Handlers
 
     public ActivitySettingsBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 11, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 12, sIncludes, sViewsWithIds));
     }
     private ActivitySettingsBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
             , (android.widget.ImageButton) bindings[1]
-            , (android.widget.LinearLayout) bindings[8]
             , (android.widget.LinearLayout) bindings[9]
             , (android.widget.LinearLayout) bindings[10]
-            , (com.google.android.material.materialswitch.MaterialSwitch) bindings[7]
+            , (android.widget.LinearLayout) bindings[11]
+            , (com.google.android.material.materialswitch.MaterialSwitch) bindings[8]
             , (com.google.android.material.materialswitch.MaterialSwitch) bindings[2]
-            , (com.google.android.material.materialswitch.MaterialSwitch) bindings[3]
             , (com.google.android.material.materialswitch.MaterialSwitch) bindings[6]
+            , (com.google.android.material.materialswitch.MaterialSwitch) bindings[3]
+            , (com.google.android.material.materialswitch.MaterialSwitch) bindings[7]
             , (com.google.android.material.materialswitch.MaterialSwitch) bindings[4]
             , (com.google.android.material.materialswitch.MaterialSwitch) bindings[5]
             );

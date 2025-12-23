@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Dark Theme Colors -->
+    <color name="primary_blue">#6C9BFF</color>
+    <color name="primary_blue_dark">#4A7AD9</color>
+    <color name="primary_blue_light">#8CB4FF</color>
+    
+    <color name="primary_purple">#A78BFA</color>
+    <color name="primary_purple_dark">#8B5CF6</color>
+    <color name="primary_purple_light">#C4B5FD</color>
+    
+    <!-- Background Colors (Dark) -->
+    <color name="background_primary">#121212</color>
+    <color name="background_secondary">#1E1E1E</color>
+    <color name="card_background">#2A2A2A</color>
+    <color name="nav_background">#1A1A1A</color>
+    <color name="surface">#262626</color>
+    
+    <!-- Text Colors (Dark) -->
+    <color name="text_primary">#FFFFFF</color>
+    <color name="text_secondary">#B3B3B3</color>
+    <color name="text_hint">#666666</color>
+    <color name="text_on_primary">#FFFFFF</color>
+    
+    <!-- Status Colors (Same in dark, slightly adjusted for visibility) -->
+    <color name="heart_rate_red">#FF6B6B</color>
+    <color name="steps_teal">#4ECDC4</color>
+    <color name="sleep_purple">#A78BFA</color>
+    <color name="hydration_cyan">#22D3EE</color>
+    <color name="nutrition_green">#34D399</color>
+    <color name="warning_orange">#FB923C</color>
+    <color name="error_red">#F87171</color>
+    <color name="success_green">#4ADE80</color>
+    <color name="emergency_red">#EF4444</color>
+    
+    <!-- Divider -->
+    <color name="divider">#404040</color>
+    
+    <!-- Facebook Blue -->
+    <color name="facebook_blue">#1877F2</color>
+</resources>

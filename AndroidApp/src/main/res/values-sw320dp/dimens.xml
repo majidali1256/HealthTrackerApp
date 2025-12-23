@@ -1,18 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Small phones (320dp) -->
-    <dimen name="header_height">220dp</dimen>
-    <dimen name="primary_card_height">130dp</dimen>
-    <dimen name="metric_card_height">100dp</dimen>
-    <dimen name="metric_card_margin">12dp</dimen>
+    <!-- Small phones (320dp) - Very compact layout -->
+    <dimen name="header_height">180dp</dimen>
+    <dimen name="primary_card_height">100dp</dimen>
+    <dimen name="metric_card_height">85dp</dimen>
+    <dimen name="metric_card_margin">8dp</dimen>
     
-    <dimen name="text_greeting">12sp</dimen>
-    <dimen name="text_username">22sp</dimen>
-    <dimen name="text_primary_value">52sp</dimen>
-    <dimen name="text_metric_value">22sp</dimen>
-    <dimen name="text_metric_label">10sp</dimen>
+    <dimen name="text_greeting">11sp</dimen>
+    <dimen name="text_username">18sp</dimen>
+    <dimen name="text_primary_value">42sp</dimen>
+    <dimen name="text_metric_value">20sp</dimen>
+    <dimen name="text_metric_label">9sp</dimen>
     
-    <dimen name="card_corner_radius">16dp</dimen>
-    <dimen name="card_padding">12dp</dimen>
-    <dimen name="screen_padding">12dp</dimen>
+    <dimen name="card_corner_radius">12dp</dimen>
+    <dimen name="card_padding">10dp</dimen>
+    <dimen name="screen_padding">10dp</dimen>
+    
+    <dimen name="button_height">44dp</dimen>
+    <dimen name="screen_padding_horizontal">16dp</dimen>
+    <dimen name="screen_padding_vertical">16dp</dimen>
+    
+    <dimen name="profile_picture_large">80dp</dimen>
+    <dimen name="profile_picture_medium">60dp</dimen>
 </resources>

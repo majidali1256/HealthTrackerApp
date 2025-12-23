@@ -40,8 +40,6 @@ import com.healthtracker.app.di.FirebaseModule_ProvideGoogleSignInClientFactory;
 import com.healthtracker.app.di.FirebaseModule_ProvideGoogleSignInOptionsFactory;
 import com.healthtracker.app.services.EmergencySOSService;
 import com.healthtracker.app.services.EmergencySOSService_MembersInjector;
-import com.healthtracker.app.services.StepCounterService;
-import com.healthtracker.app.services.StepCounterService_MembersInjector;
 import com.healthtracker.app.ui.auth.AuthViewModel;
 import com.healthtracker.app.ui.auth.AuthViewModel_HiltModules;
 import com.healthtracker.app.ui.auth.LoginActivity;
@@ -86,6 +84,9 @@ import com.healthtracker.app.ui.trends.TrendsActivity;
 import com.healthtracker.app.ui.trends.TrendsActivity_MembersInjector;
 import com.healthtracker.app.ui.trends.TrendsViewModel;
 import com.healthtracker.app.ui.trends.TrendsViewModel_HiltModules;
+import com.healthtracker.app.ui.vitals.LogVitalsActivity;
+import com.healthtracker.app.ui.vitals.LogVitalsViewModel;
+import com.healthtracker.app.ui.vitals.LogVitalsViewModel_HiltModules;
 import dagger.hilt.android.ActivityRetainedLifecycle;
 import dagger.hilt.android.ViewModelLifecycle;
 import dagger.hilt.android.internal.builders.ActivityComponentBuilder;
@@ -506,13 +507,17 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
     }
 
     @Override
+    public void injectLogVitalsActivity(LogVitalsActivity logVitalsActivity) {
+    }
+
+    @Override
     public DefaultViewModelFactories.InternalFactoryFactory getHiltInternalFactoryFactory() {
       return DefaultViewModelFactories_InternalFactoryFactory_Factory.newInstance(getViewModelKeys(), new ViewModelCBuilder(singletonCImpl, activityRetainedCImpl));
     }
 
     @Override
     public Map<Class<?>, Boolean> getViewModelKeys() {
-      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>builderWithExpectedSize(9).put(LazyClassKeyProvider.com_healthtracker_app_ui_auth_AuthViewModel, AuthViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_dashboard_DashboardViewModel, DashboardViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_documents_DocumentVaultViewModel, DocumentVaultViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_food_FoodLoggerViewModel, FoodLoggerViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_medications_MedicationsViewModel, MedicationsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_profile_ProfileSetupViewModel, ProfileSetupViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_sleep_SleepAnalysisViewModel, SleepAnalysisViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel, SymptomCheckerViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_trends_TrendsViewModel, TrendsViewModel_HiltModules.KeyModule.provide()).build());
+      return LazyClassKeyMap.<Boolean>of(ImmutableMap.<String, Boolean>builderWithExpectedSize(10).put(LazyClassKeyProvider.com_healthtracker_app_ui_auth_AuthViewModel, AuthViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_dashboard_DashboardViewModel, DashboardViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_documents_DocumentVaultViewModel, DocumentVaultViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_food_FoodLoggerViewModel, FoodLoggerViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_vitals_LogVitalsViewModel, LogVitalsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_medications_MedicationsViewModel, MedicationsViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_profile_ProfileSetupViewModel, ProfileSetupViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_sleep_SleepAnalysisViewModel, SleepAnalysisViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel, SymptomCheckerViewModel_HiltModules.KeyModule.provide()).put(LazyClassKeyProvider.com_healthtracker_app_ui_trends_TrendsViewModel, TrendsViewModel_HiltModules.KeyModule.provide()).build());
     }
 
     @Override
@@ -599,50 +604,55 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
-      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
-
-      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
-
-      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
-
       static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
-
-      static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
 
       static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
 
-      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
+      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
 
-      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
+
+      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
 
       static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
 
-      @KeepFieldType
-      AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
+      static String com_healthtracker_app_ui_vitals_LogVitalsViewModel = "com.healthtracker.app.ui.vitals.LogVitalsViewModel";
 
-      @KeepFieldType
-      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
+      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
 
-      @KeepFieldType
-      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
+      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+
+      static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
 
       @KeepFieldType
       DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
 
       @KeepFieldType
-      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
+      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
 
       @KeepFieldType
-      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
+      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
+
+      @KeepFieldType
+      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
 
       @KeepFieldType
       SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
 
       @KeepFieldType
+      TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
+
+      @KeepFieldType
+      LogVitalsViewModel com_healthtracker_app_ui_vitals_LogVitalsViewModel2;
+
+      @KeepFieldType
+      AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
+
+      @KeepFieldType
       ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
 
       @KeepFieldType
-      TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
+      SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
     }
   }
 
@@ -660,6 +670,8 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
     private Provider<DocumentVaultViewModel> documentVaultViewModelProvider;
 
     private Provider<FoodLoggerViewModel> foodLoggerViewModelProvider;
+
+    private Provider<LogVitalsViewModel> logVitalsViewModelProvider;
 
     private Provider<MedicationsViewModel> medicationsViewModelProvider;
 
@@ -688,16 +700,17 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
       this.dashboardViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 1);
       this.documentVaultViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 2);
       this.foodLoggerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 3);
-      this.medicationsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
-      this.profileSetupViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
-      this.sleepAnalysisViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
-      this.symptomCheckerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
-      this.trendsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
+      this.logVitalsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 4);
+      this.medicationsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 5);
+      this.profileSetupViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 6);
+      this.sleepAnalysisViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 7);
+      this.symptomCheckerViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 8);
+      this.trendsViewModelProvider = new SwitchingProvider<>(singletonCImpl, activityRetainedCImpl, viewModelCImpl, 9);
     }
 
     @Override
     public Map<Class<?>, javax.inject.Provider<ViewModel>> getHiltViewModelMap() {
-      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>builderWithExpectedSize(9).put(LazyClassKeyProvider.com_healthtracker_app_ui_auth_AuthViewModel, ((Provider) authViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_dashboard_DashboardViewModel, ((Provider) dashboardViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_documents_DocumentVaultViewModel, ((Provider) documentVaultViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_food_FoodLoggerViewModel, ((Provider) foodLoggerViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_medications_MedicationsViewModel, ((Provider) medicationsViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_profile_ProfileSetupViewModel, ((Provider) profileSetupViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_sleep_SleepAnalysisViewModel, ((Provider) sleepAnalysisViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel, ((Provider) symptomCheckerViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_trends_TrendsViewModel, ((Provider) trendsViewModelProvider)).build());
+      return LazyClassKeyMap.<javax.inject.Provider<ViewModel>>of(ImmutableMap.<String, javax.inject.Provider<ViewModel>>builderWithExpectedSize(10).put(LazyClassKeyProvider.com_healthtracker_app_ui_auth_AuthViewModel, ((Provider) authViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_dashboard_DashboardViewModel, ((Provider) dashboardViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_documents_DocumentVaultViewModel, ((Provider) documentVaultViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_food_FoodLoggerViewModel, ((Provider) foodLoggerViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_vitals_LogVitalsViewModel, ((Provider) logVitalsViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_medications_MedicationsViewModel, ((Provider) medicationsViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_profile_ProfileSetupViewModel, ((Provider) profileSetupViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_sleep_SleepAnalysisViewModel, ((Provider) sleepAnalysisViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel, ((Provider) symptomCheckerViewModelProvider)).put(LazyClassKeyProvider.com_healthtracker_app_ui_trends_TrendsViewModel, ((Provider) trendsViewModelProvider)).build());
     }
 
     @Override
@@ -707,50 +720,55 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
 
     @IdentifierNameString
     private static final class LazyClassKeyProvider {
+      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
+
+      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
+
+      static String com_healthtracker_app_ui_vitals_LogVitalsViewModel = "com.healthtracker.app.ui.vitals.LogVitalsViewModel";
+
+      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+
+      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
+
+      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
+
+      static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
+
+      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
+
       static String com_healthtracker_app_ui_documents_DocumentVaultViewModel = "com.healthtracker.app.ui.documents.DocumentVaultViewModel";
 
       static String com_healthtracker_app_ui_sleep_SleepAnalysisViewModel = "com.healthtracker.app.ui.sleep.SleepAnalysisViewModel";
 
-      static String com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel = "com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel";
+      @KeepFieldType
+      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
 
-      static String com_healthtracker_app_ui_auth_AuthViewModel = "com.healthtracker.app.ui.auth.AuthViewModel";
+      @KeepFieldType
+      SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
 
-      static String com_healthtracker_app_ui_medications_MedicationsViewModel = "com.healthtracker.app.ui.medications.MedicationsViewModel";
+      @KeepFieldType
+      LogVitalsViewModel com_healthtracker_app_ui_vitals_LogVitalsViewModel2;
 
-      static String com_healthtracker_app_ui_food_FoodLoggerViewModel = "com.healthtracker.app.ui.food.FoodLoggerViewModel";
+      @KeepFieldType
+      ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
 
-      static String com_healthtracker_app_ui_profile_ProfileSetupViewModel = "com.healthtracker.app.ui.profile.ProfileSetupViewModel";
+      @KeepFieldType
+      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
 
-      static String com_healthtracker_app_ui_trends_TrendsViewModel = "com.healthtracker.app.ui.trends.TrendsViewModel";
+      @KeepFieldType
+      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
 
-      static String com_healthtracker_app_ui_dashboard_DashboardViewModel = "com.healthtracker.app.ui.dashboard.DashboardViewModel";
+      @KeepFieldType
+      TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
+
+      @KeepFieldType
+      AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
 
       @KeepFieldType
       DocumentVaultViewModel com_healthtracker_app_ui_documents_DocumentVaultViewModel2;
 
       @KeepFieldType
       SleepAnalysisViewModel com_healthtracker_app_ui_sleep_SleepAnalysisViewModel2;
-
-      @KeepFieldType
-      SymptomCheckerViewModel com_healthtracker_app_ui_symptoms_SymptomCheckerViewModel2;
-
-      @KeepFieldType
-      AuthViewModel com_healthtracker_app_ui_auth_AuthViewModel2;
-
-      @KeepFieldType
-      MedicationsViewModel com_healthtracker_app_ui_medications_MedicationsViewModel2;
-
-      @KeepFieldType
-      FoodLoggerViewModel com_healthtracker_app_ui_food_FoodLoggerViewModel2;
-
-      @KeepFieldType
-      ProfileSetupViewModel com_healthtracker_app_ui_profile_ProfileSetupViewModel2;
-
-      @KeepFieldType
-      TrendsViewModel com_healthtracker_app_ui_trends_TrendsViewModel2;
-
-      @KeepFieldType
-      DashboardViewModel com_healthtracker_app_ui_dashboard_DashboardViewModel2;
     }
 
     private static final class SwitchingProvider<T> implements Provider<T> {
@@ -786,19 +804,22 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
           case 3: // com.healthtracker.app.ui.food.FoodLoggerViewModel 
           return (T) new FoodLoggerViewModel(singletonCImpl.healthRepositoryProvider.get(), singletonCImpl.provideFirebaseAuthProvider.get());
 
-          case 4: // com.healthtracker.app.ui.medications.MedicationsViewModel 
+          case 4: // com.healthtracker.app.ui.vitals.LogVitalsViewModel 
+          return (T) new LogVitalsViewModel(singletonCImpl.healthRepositoryProvider.get(), singletonCImpl.provideFirebaseAuthProvider.get());
+
+          case 5: // com.healthtracker.app.ui.medications.MedicationsViewModel 
           return (T) new MedicationsViewModel(singletonCImpl.healthRepositoryProvider.get());
 
-          case 5: // com.healthtracker.app.ui.profile.ProfileSetupViewModel 
+          case 6: // com.healthtracker.app.ui.profile.ProfileSetupViewModel 
           return (T) new ProfileSetupViewModel(singletonCImpl.healthRepositoryProvider.get());
 
-          case 6: // com.healthtracker.app.ui.sleep.SleepAnalysisViewModel 
+          case 7: // com.healthtracker.app.ui.sleep.SleepAnalysisViewModel 
           return (T) new SleepAnalysisViewModel(singletonCImpl.healthRepositoryProvider.get());
 
-          case 7: // com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel 
+          case 8: // com.healthtracker.app.ui.symptoms.SymptomCheckerViewModel 
           return (T) new SymptomCheckerViewModel();
 
-          case 8: // com.healthtracker.app.ui.trends.TrendsViewModel 
+          case 9: // com.healthtracker.app.ui.trends.TrendsViewModel 
           return (T) new TrendsViewModel(singletonCImpl.healthRepositoryProvider.get());
 
           default: throw new AssertionError(id);
@@ -880,23 +901,11 @@ public final class DaggerHealthTrackerApp_HiltComponents_SingletonC {
       injectEmergencySOSService2(emergencySOSService);
     }
 
-    @Override
-    public void injectStepCounterService(StepCounterService stepCounterService) {
-      injectStepCounterService2(stepCounterService);
-    }
-
     @CanIgnoreReturnValue
     private EmergencySOSService injectEmergencySOSService2(EmergencySOSService instance) {
       EmergencySOSService_MembersInjector.injectUserDao(instance, singletonCImpl.userDao());
       EmergencySOSService_MembersInjector.injectFirebaseAuth(instance, singletonCImpl.provideFirebaseAuthProvider.get());
       return instance;
-    }
-
-    @CanIgnoreReturnValue
-    private StepCounterService injectStepCounterService2(StepCounterService instance2) {
-      StepCounterService_MembersInjector.injectActivityRecordDao(instance2, singletonCImpl.activityRecordDao());
-      StepCounterService_MembersInjector.injectFirebaseAuth(instance2, singletonCImpl.provideFirebaseAuthProvider.get());
-      return instance2;
     }
   }
 

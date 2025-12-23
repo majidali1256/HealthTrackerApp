@@ -74,10 +74,14 @@ class DashboardActivity : AppCompatActivity() {
             overridePendingTransition(com.healthtracker.app.R.anim.slide_in_right, com.healthtracker.app.R.anim.slide_out_left)
         }
         
-        // Sleep card - go to Sleep Analysis
+        // Sleep card - Show add sleep dialog (long press for analysis screen)
         binding.cardSleep.setOnClickListener {
+            showAddSleepDialog()
+        }
+        binding.cardSleep.setOnLongClickListener {
             startActivity(android.content.Intent(this, com.healthtracker.app.ui.sleep.SleepAnalysisActivity::class.java))
             overridePendingTransition(com.healthtracker.app.R.anim.slide_in_right, com.healthtracker.app.R.anim.slide_out_left)
+            true
         }
         
         // Hydration card - Quick add water
@@ -200,15 +204,17 @@ class DashboardActivity : AppCompatActivity() {
     }
     
     private fun showQuickLogDialog() {
-        val options = arrayOf("💧 Add Water", "🍎 Log Food", "💊 Medication", "📝 Symptom")
+        val options = arrayOf("❤️ Log Vitals", "💤 Log Sleep", "💧 Add Water", "🍎 Log Food", "💊 Medication", "📝 Symptom")
         com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
             .setTitle("Quick Log")
             .setItems(options) { _, which ->
                 when (which) {
-                    0 -> showAddHydrationDialog()
-                    1 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.food.FoodLoggerActivity::class.java))
-                    2 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.medications.MedicationsActivity::class.java))
-                    3 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.symptoms.SymptomCheckerActivity::class.java))
+                    0 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.vitals.LogVitalsActivity::class.java))
+                    1 -> showAddSleepDialog()
+                    2 -> showAddHydrationDialog()
+                    3 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.food.FoodLoggerActivity::class.java))
+                    4 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.medications.MedicationsActivity::class.java))
+                    5 -> startActivity(android.content.Intent(this, com.healthtracker.app.ui.symptoms.SymptomCheckerActivity::class.java))
                 }
             }
             .show()
@@ -221,13 +227,13 @@ class DashboardActivity : AppCompatActivity() {
             .setMessage("""
                 Current: $heartRate BPM
                 
-                Status: ${if (heartRate in 60..100) "Normal" else if (heartRate > 100) "Elevated" else "Low"}
+                Status: ${if (heartRate in 60..100) "Normal" else if (heartRate > 100) "Elevated" else if (heartRate > 0) "Low" else "No data"}
                 
                 Resting heart rate for adults typically ranges from 60 to 100 beats per minute.
             """.trimIndent())
             .setPositiveButton("OK", null)
-            .setNeutralButton("View Trends") { _, _ ->
-                startActivity(android.content.Intent(this, com.healthtracker.app.ui.trends.TrendsActivity::class.java))
+            .setNeutralButton("Log Vitals") { _, _ ->
+                startActivity(android.content.Intent(this, com.healthtracker.app.ui.vitals.LogVitalsActivity::class.java))
             }
             .show()
     }
@@ -238,9 +244,36 @@ class DashboardActivity : AppCompatActivity() {
             .setTitle("💧 Add Water")
             .setItems(glasses) { _, which ->
                 val amount = which + 1
-                android.widget.Toast.makeText(this, "Added $amount glass(es) of water", android.widget.Toast.LENGTH_SHORT).show()
-                // TODO: Log hydration to database
+                firebaseAuth.currentUser?.uid?.let { userId ->
+                    viewModel.addWater(userId, amount)
+                    android.widget.Toast.makeText(this, "Added $amount glass(es) of water", android.widget.Toast.LENGTH_SHORT).show()
+                }
             }
+            .show()
+    }
+    
+    private fun showAddSleepDialog() {
+        val hours = arrayOf("4 hours", "5 hours", "6 hours", "7 hours", "8 hours", "9 hours", "10 hours")
+        val hourValues = floatArrayOf(4f, 5f, 6f, 7f, 8f, 9f, 10f)
+        
+        com.google.android.material.dialog.MaterialAlertDialogBuilder(this)
+            .setTitle("💤 Log Last Night's Sleep")
+            .setMessage("How many hours did you sleep?")
+            .setItems(hours) { _, which ->
+                val sleepHours = hourValues[which]
+                firebaseAuth.currentUser?.uid?.let { userId ->
+                    viewModel.addSleep(userId, sleepHours)
+                    android.widget.Toast.makeText(
+                        this, 
+                        "Logged ${sleepHours.toInt()} hours of sleep", 
+                        android.widget.Toast.LENGTH_SHORT
+                    ).show()
+                }
+            }
+            .setNeutralButton("View Analysis") { _, _ ->
+                startActivity(android.content.Intent(this, com.healthtracker.app.ui.sleep.SleepAnalysisActivity::class.java))
+            }
+            .setNegativeButton("Cancel", null)
             .show()
     }
     

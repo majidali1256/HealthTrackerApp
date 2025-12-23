@@ -1,9 +1,20 @@
 -- Merging decision tree log ---
+provider#androidx.core.content.FileProvider
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:42:9-50:20
+	android:grantUriPermissions
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:46:13-47
+	android:authorities
+		INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:44:13-64
+	android:exported
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:45:13-37
+	android:name
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:43:13-62
 manifest
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-186:12
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-203:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-203:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-203:12
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:2:1-203:12
 MERGED from [androidx.databinding:databinding-adapters:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/8d0aeded26a59666698bdedee6f1a076/transformed/databinding-adapters-8.7.3/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-ktx:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/941ca4170185eafcfc3f4bab1a584dc6/transformed/databinding-ktx-8.7.3/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.databinding:databinding-runtime:8.7.3] /Users/macbookair/.gradle/caches/8.9/transforms/1018799ae2cfe9b0330598e98ed333bc/transformed/databinding-runtime-8.7.3/AndroidManifest.xml:2:1-7:12
@@ -60,6 +71,8 @@ MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] /Users/macbo
 MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/07a970fa4483979760ff0c172af7a48f/transformed/vectordrawable-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/ac96c7309e54bc44039f46a04cd5d412/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/95c396f7baf21d7524a336e98a714606/transformed/loader-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/8f3da09ef155199061a01e8dcded8149/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:17:1-145:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/f319bf8ad8b47f60baacdaad1cf2e053/transformed/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/484c459bce2fa5588752cda098069e0a/transformed/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/8a057eea35829029c05d4dde8f217718/transformed/slidingpanelayout-1.2.0/AndroidManifest.xml:17:1-24:12
@@ -102,6 +115,7 @@ MERGED from [androidx.sqlite:sqlite-framework:2.4.0] /Users/macbookair/.gradle/c
 MERGED from [androidx.sqlite:sqlite:2.4.0] /Users/macbookair/.gradle/caches/8.9/transforms/974592d456394ea71701f66af850d501/transformed/sqlite-2.4.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/30d79ab2c67aa87ff6e561f27ae12007/transformed/annotation-experimental-1.3.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/macbookair/.gradle/caches/8.9/transforms/70ed717cae9a8db11d96dd478e143cad/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/a6b8b82dc6dbba71723fd662381f647c/transformed/MPAndroidChart-v3.1.0/AndroidManifest.xml:2:1-20:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fe07c0b3948634d3e61862e1bd1a91f4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/377582ba6e72b5f704c2195dc92f36d2/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/5ca87856fc4739ef493e4411df994784/transformed/core-runtime-2.2.0/AndroidManifest.xml:17:1-22:12
@@ -156,6 +170,8 @@ MERGED from [com.google.firebase:firebase-storage:20.3.0] /Users/macbookair/.gra
 MERGED from [com.google.firebase:firebase-storage:20.3.0] /Users/macbookair/.gradle/caches/8.9/transforms/8b4a982260d02c59d2f753eb0c619d04/transformed/firebase-storage-20.3.0/AndroidManifest.xml:23:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.10.0] /Users/macbookair/.gradle/caches/8.9/transforms/869c894a23f84168b1f9a82ae788d313/transformed/firebase-firestore-24.10.0/AndroidManifest.xml:10:5-79
 MERGED from [com.google.firebase:firebase-firestore:24.10.0] /Users/macbookair/.gradle/caches/8.9/transforms/869c894a23f84168b1f9a82ae788d313/transformed/firebase-firestore-24.10.0/AndroidManifest.xml:10:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:24:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/macbookair/.gradle/caches/8.9/transforms/c56eab184c15a6e5f27c9ae928d42408/transformed/recaptcha-18.1.2/AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.recaptcha:recaptcha:18.1.2] /Users/macbookair/.gradle/caches/8.9/transforms/c56eab184c15a6e5f27c9ae928d42408/transformed/recaptcha-18.1.2/AndroidManifest.xml:8:5-79
 MERGED from [com.google.android.datatransport:transport-backend-cct:2.3.3] /Users/macbookair/.gradle/caches/8.9/transforms/04797105c94b24113bc0afc76265f5d1/transformed/transport-backend-cct-2.3.3/AndroidManifest.xml:25:5-79
@@ -196,6 +212,8 @@ ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:14:22-63
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
 ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:15:5-81
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:25:5-81
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:15:22-78
 uses-permission#android.permission.SCHEDULE_EXACT_ALARM
@@ -204,6 +222,8 @@ ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:16:22-76
 uses-permission#android.permission.FOREGROUND_SERVICE
 ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:17:5-77
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:26:5-77
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:17:22-74
 uses-permission#android.permission.FOREGROUND_SERVICE_HEALTH
@@ -243,8 +263,8 @@ ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:26:19-63
 application
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-184:19
-INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-184:19
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-201:19
+INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:28:5-201:19
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.11.0] /Users/macbookair/.gradle/caches/8.9/transforms/128d136f6a0c412c41bee61a572f8395/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/macbookair/.gradle/caches/8.9/transforms/1334d7408ce37de7dd891dfedb2eb592/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
@@ -287,6 +307,8 @@ MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair
 MERGED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/0d76d1b6ca152889d125401bc33a72e7/transformed/play-services-base-18.1.0/AndroidManifest.xml:19:5-23:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:28:5-143:19
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:28:5-143:19
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:24:5-31:19
 MERGED from [androidx.core:core:1.12.0] /Users/macbookair/.gradle/caches/8.9/transforms/8340b8232204c9811695a87c31934d3b/transformed/core-1.12.0/AndroidManifest.xml:28:5-89
@@ -348,181 +370,195 @@ MERGED from [com.google.android.odml:image:1.0.0-beta1] /Users/macbookair/.gradl
 	android:name
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:29:9-41
 activity#com.healthtracker.app.ui.splash.SplashActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:42:9-50:20
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:53:9-61:20
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:44:13-36
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:55:13-36
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:45:13-62
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:56:13-62
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:43:13-53
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:54:13-53
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:46:13-49:29
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:57:13-60:29
 action#android.intent.action.MAIN
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:47:17-69
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:58:17-69
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:47:25-66
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:58:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:48:17-77
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:59:17-77
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:48:27-74
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:59:27-74
 activity#com.healthtracker.app.ui.auth.LoginActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:53:9-56:58
-	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:55:13-37
-	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:56:13-55
-	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:54:13-50
-activity#com.healthtracker.app.ui.auth.SignUpActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:58:9-61:58
-	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:60:13-37
-	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:61:13-55
-	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:59:13-51
-activity#com.healthtracker.app.ui.dashboard.DashboardActivity
 ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:64:9-67:58
 	android:exported
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:66:13-37
 	android:theme
 		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:67:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:65:13-59
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:65:13-50
+activity#com.healthtracker.app.ui.auth.SignUpActivity
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:69:9-72:58
+	android:exported
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:71:13-37
+	android:theme
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:72:13-55
+	android:name
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:70:13-51
+activity#com.healthtracker.app.ui.dashboard.DashboardActivity
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:75:9-78:58
+	android:exported
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:77:13-37
+	android:theme
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:78:13-55
+	android:name
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:76:13-59
 activity#com.healthtracker.app.ui.profile.ProfileSetupActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:70:9-73:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:81:9-84:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:72:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:83:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:73:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:84:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:71:13-60
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:82:13-60
 activity#com.healthtracker.app.ui.profile.ProfileActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:76:9-79:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:87:9-90:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:78:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:89:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:79:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:90:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:77:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:88:13-55
 activity#com.healthtracker.app.ui.profile.MedicalIdActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:82:9-85:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:93:9-96:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:84:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:95:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:85:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:96:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:83:13-57
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:94:13-57
 activity#com.healthtracker.app.ui.profile.SettingsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:88:9-91:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:99:9-102:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:90:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:101:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:91:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:102:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:89:13-56
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:100:13-56
+activity#com.healthtracker.app.ui.vitals.LogVitalsActivity
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:105:9-108:58
+	android:exported
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:107:13-37
+	android:theme
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:108:13-55
+	android:name
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:106:13-56
 receiver#com.healthtracker.app.receivers.BootReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:108:9-114:20
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:125:9-131:20
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:110:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:127:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:109:13-51
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:126:13-51
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:111:13-113:29
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:128:13-130:29
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:112:17-79
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:129:17-79
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:112:25-76
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:129:25-76
 receiver#com.healthtracker.app.receivers.MedicationReminderReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:117:9-119:40
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:134:9-136:40
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:119:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:136:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:118:13-65
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:135:13-65
 service#com.healthtracker.app.services.StepCounterService
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:122:9-129:19
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:139:9-146:19
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:124:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:141:13-37
 	android:foregroundServiceType
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:125:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:142:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:123:13-56
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:140:13-56
 property#android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:126:13-128:49
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:143:13-145:49
 	android:value
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:128:17-46
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:145:17-46
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:127:17-76
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:144:17-76
 service#com.healthtracker.app.services.EmergencySOSService
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:132:9-135:56
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:149:9-152:56
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:134:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:151:13-37
 	android:foregroundServiceType
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:135:13-53
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:152:13-53
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:133:13-57
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:150:13-57
 activity#com.healthtracker.app.ui.sleep.SleepAnalysisActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:138:9-141:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:155:9-158:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:140:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:157:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:141:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:158:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:139:13-59
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:156:13-59
 activity#com.healthtracker.app.ui.tools.ToolsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:144:9-147:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:161:9-164:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:146:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:163:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:147:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:164:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:145:13-51
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:162:13-51
 activity#com.healthtracker.app.ui.documents.DocumentVaultActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:150:9-153:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:167:9-170:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:152:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:169:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:153:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:170:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:151:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:168:13-63
 activity#com.healthtracker.app.ui.food.FoodLoggerActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:156:9-159:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:173:9-176:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:158:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:175:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:159:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:176:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:157:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:174:13-55
 activity#com.healthtracker.app.ui.symptoms.SymptomCheckerActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:162:9-165:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:179:9-182:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:164:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:181:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:165:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:182:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:163:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:180:13-63
 activity#com.healthtracker.app.ui.medications.MedicationsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:168:9-171:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:185:9-188:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:170:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:187:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:171:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:188:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:169:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:186:13-63
 activity#com.healthtracker.app.ui.trends.TrendsActivity
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:174:9-177:58
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:191:9-194:58
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:176:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:193:13-37
 	android:theme
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:177:13-55
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:194:13-55
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:175:13-53
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:192:13-53
 receiver#com.healthtracker.app.receivers.MedicationActionReceiver
-ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:180:9-182:40
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:197:9-199:40
 	android:exported
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:182:13-37
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:199:13-37
 	android:name
-		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:181:13-63
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:198:13-63
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:47:13-49:63
+	android:resource
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:49:17-60
+	android:name
+		ADDED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml:48:17-67
 uses-sdk
 INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/AndroidManifest.xml
@@ -639,6 +675,10 @@ MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/ac96c7309e54bc44039f46a04cd5d412/transformed/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/95c396f7baf21d7524a336e98a714606/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.loader:loader:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/95c396f7baf21d7524a336e98a714606/transformed/loader-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/8f3da09ef155199061a01e8dcded8149/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime-ktx:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/8f3da09ef155199061a01e8dcded8149/transformed/work-runtime-ktx-2.9.0/AndroidManifest.xml:20:5-44
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:21:5-44
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:21:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/f319bf8ad8b47f60baacdaad1cf2e053/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/f319bf8ad8b47f60baacdaad1cf2e053/transformed/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/484c459bce2fa5588752cda098069e0a/transformed/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -723,6 +763,8 @@ MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/macbookai
 MERGED from [androidx.annotation:annotation-experimental:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/30d79ab2c67aa87ff6e561f27ae12007/transformed/annotation-experimental-1.3.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/macbookair/.gradle/caches/8.9/transforms/70ed717cae9a8db11d96dd478e143cad/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
 MERGED from [androidx.security:security-crypto:1.1.0-alpha06] /Users/macbookair/.gradle/caches/8.9/transforms/70ed717cae9a8db11d96dd478e143cad/transformed/security-crypto-1.1.0-alpha06/AndroidManifest.xml:20:5-44
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/a6b8b82dc6dbba71723fd662381f647c/transformed/MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
+MERGED from [com.github.PhilJay:MPAndroidChart:v3.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/a6b8b82dc6dbba71723fd662381f647c/transformed/MPAndroidChart-v3.1.0/AndroidManifest.xml:16:5-18:41
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fe07c0b3948634d3e61862e1bd1a91f4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/fe07c0b3948634d3e61862e1bd1a91f4/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/377582ba6e72b5f704c2195dc92f36d2/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
@@ -1013,6 +1055,8 @@ ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair/
 		ADDED from [com.google.android.gms:play-services-base:18.1.0] /Users/macbookair/.gradle/caches/8.9/transforms/0d76d1b6ca152889d125401bc33a72e7/transformed/play-services-base-18.1.0/AndroidManifest.xml:20:19-85
 provider#androidx.startup.InitializationProvider
 ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:24:9-32:20
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
+MERGED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:29:9-37:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/283ee8434a527336d0a652ed944787c1/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.lifecycle:lifecycle-process:2.7.0] /Users/macbookair/.gradle/caches/8.9/transforms/283ee8434a527336d0a652ed944787c1/transformed/lifecycle-process-2.7.0/AndroidManifest.xml:24:9-32:20
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.1] /Users/macbookair/.gradle/caches/8.9/transforms/198c53ac6b798b5e31bd87d821525841/transformed/profileinstaller-1.3.1/AndroidManifest.xml:24:9-32:20
@@ -1033,6 +1077,214 @@ ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/t
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:31:17-49
 	android:name
 		ADDED from [androidx.emoji2:emoji2:1.2.0] /Users/macbookair/.gradle/caches/8.9/transforms/32fe104b7ce53c4bb4721fac501cd53c/transformed/emoji2-1.2.0/AndroidManifest.xml:30:17-75
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:23:5-68
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:23:22-65
+meta-data#androidx.work.WorkManagerInitializer
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:34:13-36:52
+	android:value
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:36:17-49
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:35:17-68
+service#androidx.work.impl.background.systemalarm.SystemAlarmService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:39:9-45:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:42:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:43:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:44:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:45:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:41:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:40:13-88
+service#androidx.work.impl.background.systemjob.SystemJobService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:46:9-52:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:49:13-70
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:50:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:51:13-69
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:52:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:48:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:47:13-84
+service#androidx.work.impl.foreground.SystemForegroundService
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:53:9-59:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:56:13-77
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:57:13-37
+	tools:ignore
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:58:13-60
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:59:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:55:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:54:13-81
+receiver#androidx.work.impl.utils.ForceStopRunnable$BroadcastReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:61:9-66:35
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:64:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:65:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:66:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:63:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:62:13-88
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryChargingProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:67:9-77:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:70:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:71:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:72:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:69:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:68:13-106
+intent-filter#action:name:android.intent.action.ACTION_POWER_CONNECTED+action:name:android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:73:13-76:29
+action#android.intent.action.ACTION_POWER_CONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:17-87
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:74:25-84
+action#android.intent.action.ACTION_POWER_DISCONNECTED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:17-90
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:75:25-87
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$BatteryNotLowProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:78:9-88:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:81:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:82:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:83:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:80:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:79:13-104
+intent-filter#action:name:android.intent.action.BATTERY_LOW+action:name:android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:84:13-87:29
+action#android.intent.action.BATTERY_OKAY
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:17-77
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:85:25-74
+action#android.intent.action.BATTERY_LOW
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:17-76
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:86:25-73
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$StorageNotLowProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:89:9-99:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:92:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:93:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:94:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:91:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:90:13-104
+intent-filter#action:name:android.intent.action.DEVICE_STORAGE_LOW+action:name:android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:95:13-98:29
+action#android.intent.action.DEVICE_STORAGE_LOW
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:17-83
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:96:25-80
+action#android.intent.action.DEVICE_STORAGE_OK
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:17-82
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:97:25-79
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxy$NetworkStateProxy
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:100:9-109:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:103:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:104:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:105:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:102:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:101:13-103
+intent-filter#action:name:android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:106:13-108:29
+action#android.net.conn.CONNECTIVITY_CHANGE
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:17-79
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:107:25-76
+receiver#androidx.work.impl.background.systemalarm.RescheduleReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:110:9-121:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:113:13-36
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:114:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:115:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:112:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:111:13-88
+intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:android.intent.action.TIMEZONE_CHANGED+action:name:android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:116:13-120:29
+action#android.intent.action.TIME_SET
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:17-73
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:118:25-70
+action#android.intent.action.TIMEZONE_CHANGED
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:17-81
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:119:25-78
+receiver#androidx.work.impl.background.systemalarm.ConstraintProxyUpdateReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:122:9-131:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:125:13-72
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:126:13-37
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:127:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:124:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:123:13-99
+intent-filter#action:name:androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:128:13-130:29
+action#androidx.work.impl.background.systemalarm.UpdateProxies
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:17-98
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:129:25-95
+receiver#androidx.work.impl.diagnostics.DiagnosticsReceiver
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:132:9-142:20
+	android:enabled
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:135:13-35
+	android:exported
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:136:13-36
+	android:permission
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:137:13-57
+	tools:targetApi
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:138:13-32
+	android:directBootAware
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:134:13-44
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:133:13-78
+intent-filter#action:name:androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:139:13-141:29
+action#androidx.work.diagnostics.REQUEST_DIAGNOSTICS
+ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:17-88
+	android:name
+		ADDED from [androidx.work:work-runtime:2.9.0] /Users/macbookair/.gradle/caches/8.9/transforms/d59b7fa7063ba6fa4c0e10a5a9dfba6e/transformed/work-runtime-2.9.0/AndroidManifest.xml:140:25-85
 uses-library#androidx.window.extensions
 ADDED from [androidx.window:window:1.0.0] /Users/macbookair/.gradle/caches/8.9/transforms/70db689b270622cd603113dfa08d913a/transformed/window-1.0.0/AndroidManifest.xml:25:9-27:40
 	android:required

@@ -12,7 +12,7 @@ class BootReceiver : BroadcastReceiver() {
     
     override fun onReceive(context: Context, intent: Intent) {
         if (intent.action == Intent.ACTION_BOOT_COMPLETED) {
-            StepCounterService.startService(context)
+            StepCounterService.start(context)
         }
     }
 }

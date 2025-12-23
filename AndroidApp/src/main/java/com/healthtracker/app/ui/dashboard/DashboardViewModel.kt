@@ -92,6 +92,66 @@ class DashboardViewModel @Inject constructor(
             else -> "Good Evening"
         }
     }
+    
+    /**
+     * Add water glasses to today's hydration log
+     */
+    fun addWater(userId: String, glasses: Int) {
+        viewModelScope.launch {
+            try {
+                val healthLog = HealthLog(
+                    userId = userId,
+                    type = HealthLogType.HYDRATION,
+                    value = glasses.toFloat(),
+                    unit = "glasses",
+                    title = "Water intake",
+                    description = "$glasses glass(es) of water"
+                )
+                healthRepository.addHealthLog(healthLog)
+                // Refresh hydration display
+                refreshHydration(userId)
+            } catch (e: Exception) {
+                // Handle error
+            }
+        }
+    }
+    
+    /**
+     * Add sleep record
+     */
+    fun addSleep(userId: String, hours: Float, score: Int? = null) {
+        viewModelScope.launch {
+            try {
+                // Calculate sleep times (assume woke up now, slept 'hours' ago)
+                val sleepEnd = java.util.Date()
+                val calendar = java.util.Calendar.getInstance()
+                calendar.time = sleepEnd
+                calendar.add(java.util.Calendar.HOUR_OF_DAY, -(hours.toInt()))
+                val sleepStart = calendar.time
+                
+                val sleepRecord = SleepRecord(
+                    userId = userId,
+                    sleepStart = sleepStart,
+                    sleepEnd = sleepEnd,
+                    totalMinutes = (hours * 60).toInt(),
+                    sleepScore = score
+                )
+                healthRepository.addSleepRecord(sleepRecord)
+            } catch (e: Exception) {
+                // Handle error
+            }
+        }
+    }
+    
+    /**
+     * Refresh hydration data after adding water
+     */
+    private fun refreshHydration(userId: String) {
+        viewModelScope.launch {
+            val hydration = healthRepository.getTodayHydration(userId) ?: 0f
+            _uiState.value = _uiState.value.copy(hydrationGlasses = hydration.toInt())
+        }
+    }
 }
 
 /**

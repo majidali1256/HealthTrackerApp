@@ -101,6 +101,7 @@ color steps_teal_light
 color success_green
 color success_green_dark
 color success_green_light
+color surface
 color surface_card
 color surface_elevated
 color surface_white
@@ -245,17 +246,23 @@ id etAllergies
 id etBloodType
 id etConfirmPassword
 id etDateOfBirth
+id etDiastolic
 id etDoctorName
 id etDoctorPhone
 id etEmail
 id etEmergencyContact
 id etEmergencyPhone
 id etFullName
+id etGlucose
+id etHeartRate
 id etHeight
 id etMedicalConditions
 id etMedications
 id etNotes
 id etPassword
+id etSpO2
+id etSystolic
+id etTemperature
 id etWeight
 id fabAddDocument
 id fabAddLog
@@ -296,6 +303,7 @@ id rvSymptoms
 id sleepStagesBar
 id switchAnalytics
 id switchDailyReminders
+id switchDarkMode
 id switchMedAlerts
 id switchNotifications
 id switchShareDoctor
@@ -397,6 +405,7 @@ integer health_logs_weight
 layout activity_dashboard
 layout activity_document_vault
 layout activity_food_logger
+layout activity_log_vitals
 layout activity_login
 layout activity_medical_id
 layout activity_medications
@@ -520,4 +529,5 @@ style Widget.HealthTracker.FAB
 style Widget.HealthTracker.TextInputLayout
 xml backup_rules
 xml data_extraction_rules
+xml file_provider_paths
 xml network_security_config

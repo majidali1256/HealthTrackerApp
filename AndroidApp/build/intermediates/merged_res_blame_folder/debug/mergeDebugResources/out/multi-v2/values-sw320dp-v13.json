@@ -1,23 +1,23 @@
 {
     "logs": [
         {
-            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-71:/values-sw320dp-v13/values-sw320dp-v13.xml",
+            "outputFile": "com.healthtracker.app.AndroidApp-mergeDebugResources-73:/values-sw320dp-v13/values-sw320dp-v13.xml",
             "map": [
                 {
                     "source": "/Users/macbookair/AndroidStudioProjects/Health Tracker/AndroidApp/src/main/res/values-sw320dp/dimens.xml",
                     "from": {
-                        "startLines": "14,15,3,5,6,4,16,8,12,11,10,9",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "536,586,89,187,238,135,630,293,482,433,383,338",
-                        "endColumns": "49,43,45,50,49,51,45,44,48,48,49,44",
-                        "endOffsets": "581,625,130,233,283,182,671,333,526,477,428,378"
+                        "startLines": "18,14,15,3,5,6,4,22,23,16,19,20,8,12,11,10,9",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "700,555,605,111,209,259,157,862,915,649,745,802,313,502,453,403,358",
+                        "endColumns": "44,49,43,45,49,48,51,52,53,45,56,54,44,47,48,49,44",
+                        "endOffsets": "740,600,644,152,254,303,204,910,964,690,797,852,353,545,497,448,398"
                     },
                     "to": {
-                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13",
-                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4",
-                        "startOffsets": "55,105,149,195,246,296,348,394,439,488,537,587",
-                        "endColumns": "49,43,45,50,49,51,45,44,48,48,49,44",
-                        "endOffsets": "100,144,190,241,291,343,389,434,483,532,582,627"
+                        "startLines": "2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18",
+                        "startColumns": "4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4,4",
+                        "startOffsets": "55,100,150,194,240,290,339,391,444,498,544,601,656,701,749,798,848",
+                        "endColumns": "44,49,43,45,49,48,51,52,53,45,56,54,44,47,48,49,44",
+                        "endOffsets": "95,145,189,235,285,334,386,439,493,539,596,651,696,744,793,843,888"
                     }
                 }
             ]
