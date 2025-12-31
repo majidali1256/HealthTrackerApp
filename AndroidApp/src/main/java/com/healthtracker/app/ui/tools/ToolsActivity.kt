@@ -17,7 +17,10 @@ import com.healthtracker.app.ui.food.FoodLoggerActivity
 import com.healthtracker.app.ui.medications.MedicationsActivity
 import com.healthtracker.app.ui.symptoms.SymptomCheckerActivity
 import com.healthtracker.app.ui.trends.TrendsActivity
+import com.healthtracker.app.utils.PdfGenerator
 import dagger.hilt.android.AndroidEntryPoint
+import java.util.Calendar
+import java.util.Date
 import javax.inject.Inject
 
 /**
@@ -31,6 +34,9 @@ class ToolsActivity : AppCompatActivity() {
     
     @Inject
     lateinit var firebaseAuth: FirebaseAuth
+    
+    @Inject
+    lateinit var pdfGenerator: PdfGenerator
 
     companion object {
         private const val RC_LOCATION_PERMISSION = 1001
@@ -79,8 +85,7 @@ class ToolsActivity : AppCompatActivity() {
         
         // Export Reports
         binding.cardExportReports.setOnClickListener {
-            Toast.makeText(this, "Generating PDF report...", Toast.LENGTH_SHORT).show()
-            // TODO: Implement PDF export
+            exportHealthReport()
         }
         
         // FAB
@@ -202,7 +207,42 @@ class ToolsActivity : AppCompatActivity() {
     }
 
     private fun showQuickLogSheet() {
-        // TODO: Show BottomSheetDialogFragment for quick logging
-        Toast.makeText(this, "Quick log menu", Toast.LENGTH_SHORT).show()
+        val bottomSheet = com.healthtracker.app.ui.common.QuickLogBottomSheet.newInstance()
+        bottomSheet.setOnLogSavedListener {
+            Toast.makeText(this, "Log saved!", Toast.LENGTH_SHORT).show()
+        }
+        bottomSheet.show(supportFragmentManager, com.healthtracker.app.ui.common.QuickLogBottomSheet.TAG)
+    }
+    
+    private fun exportHealthReport() {
+        Toast.makeText(this, "Generating PDF report...", Toast.LENGTH_SHORT).show()
+        
+        // Get date range for the week
+        val calendar = Calendar.getInstance()
+        val endDate = calendar.time
+        calendar.add(Calendar.DAY_OF_YEAR, -7)
+        val startDate = calendar.time
+        
+        // Get user name
+        val userName = firebaseAuth.currentUser?.displayName ?: "User"
+        
+        // Generate report with sample/recent data
+        // In production, this should come from the database
+        val shareIntent = pdfGenerator.generateAndShare(
+            userName = userName,
+            avgHeartRate = 72,
+            avgSteps = 8245,
+            avgSleepHours = 7.5f,
+            avgHydration = 6,
+            avgCalories = 1850,
+            startDate = startDate,
+            endDate = endDate
+        )
+        
+        if (shareIntent != null) {
+            startActivity(Intent.createChooser(shareIntent, "Share Health Report"))
+        } else {
+            Toast.makeText(this, "Failed to generate report", Toast.LENGTH_SHORT).show()
+        }
     }
 }

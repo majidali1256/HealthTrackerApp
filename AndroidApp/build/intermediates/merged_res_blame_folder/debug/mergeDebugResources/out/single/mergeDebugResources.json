@@ -16,6 +16,10 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/ic_launcher_foreground.xml"
     },
     {
+        "merged": "com.healthtracker.app.AndroidApp-debug-75:/layout_bottom_sheet_quick_log.xml.flat",
+        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/bottom_sheet_quick_log.xml"
+    },
+    {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_dashboard_top.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_dashboard_top.xml"
     },
@@ -44,8 +48,16 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_fab_3d.xml"
     },
     {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_score_ring.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_score_ring.xml"
+    },
+    {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_divider_horizontal.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/divider_horizontal.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bottom_nav_color_dark.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bottom_nav_color_dark.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/layout_activity_signup.xml.flat",
@@ -84,6 +96,10 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/anim/nav_default_exit.xml"
     },
     {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_dark_teal.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_dark_teal.xml"
+    },
+    {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_emergency.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_emergency.xml"
     },
@@ -94,6 +110,10 @@
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_hydration.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_hydration.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_chip_dark.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_chip_dark.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/xml_file_provider_paths.xml.flat",
@@ -122,6 +142,10 @@
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/layout_item_symptom.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/item_symptom.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_circular_progress.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_circular_progress.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_sleep.xml.flat",
@@ -188,6 +212,10 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/activity_food_logger.xml"
     },
     {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_dark_navy.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_dark_navy.xml"
+    },
+    {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/layout_activity_medical_id.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/activity_medical_id.xml"
     },
@@ -204,8 +232,8 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_neumorphic.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-debug-75:/layout_activity_dashboard.xml.flat",
-        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/activity_dashboard.xml"
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_dark_indigo.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_dark_indigo.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/layout_item_document.xml.flat",
@@ -214,6 +242,10 @@
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_header_gradient.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_header_gradient.xml"
+    },
+    {
+        "merged": "com.healthtracker.app.AndroidApp-debug-75:/layout_bottom_sheet_add_medication.xml.flat",
+        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/bottom_sheet_add_medication.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_button_3d.xml.flat",
@@ -226,6 +258,10 @@
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_icon_circle.xml.flat",
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_icon_circle.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/drawable_bg_card_dark_green.xml.flat",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/drawable/bg_card_dark_green.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-debug-75:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",

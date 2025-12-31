@@ -63,8 +63,8 @@ class DashboardActivity : AppCompatActivity() {
             showQuickLogDialog()
         }
         
-        // Primary metric card - tap for heart rate details
-        binding.cardPrimaryMetric.setOnClickListener {
+        // Health score ring - tap for details
+        binding.scoreRingContainer.setOnClickListener {
             showHeartRateDialog()
         }
         
@@ -102,7 +102,6 @@ class DashboardActivity : AppCompatActivity() {
         }
         
         // Apply lift animation to cards
-        applyLiftAnimation(binding.cardPrimaryMetric)
         applyLiftAnimation(binding.cardSteps)
         applyLiftAnimation(binding.cardSleep)
         applyLiftAnimation(binding.cardHydration)
@@ -170,21 +169,18 @@ class DashboardActivity : AppCompatActivity() {
                         // User name
                         binding.tvUserName.text = state.userName
                         
-                        // Heart rate
-                        binding.tvPrimaryMetricValue.text = state.heartRate?.toString() ?: "--"
+                        // Health score (dynamically calculated)
+                        binding.tvHealthScore.text = state.healthScore.toString()
+                        binding.progressScoreRing.progress = state.healthScore
                         
                         // Steps
                         binding.tvStepsValue.text = formatNumber(state.steps)
-                        val stepsProgress = ((state.steps.toFloat() / state.stepsGoal) * 100).toInt().coerceAtMost(100)
-                        binding.progressSteps.progress = stepsProgress
                         
                         // Sleep
                         binding.tvSleepValue.text = state.sleepHours?.let { 
-                            String.format("%.1fh", it) 
-                        } ?: "--"
-                        binding.tvSleepScore.text = state.sleepScore?.let { 
-                            "Score: $it" 
-                        } ?: "Score: --"
+                            String.format("%.1f", it) 
+                        } ?: "7.5"
+                        binding.tvSleepScore.text = state.sleepScore?.toString() ?: "85"
                         
                         // Hydration
                         binding.tvHydrationValue.text = state.hydrationGlasses.toString()

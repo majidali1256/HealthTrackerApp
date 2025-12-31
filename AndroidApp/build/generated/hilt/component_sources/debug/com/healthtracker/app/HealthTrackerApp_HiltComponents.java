@@ -6,12 +6,14 @@ import com.healthtracker.app.services.EmergencySOSService_GeneratedInjector;
 import com.healthtracker.app.ui.auth.AuthViewModel_HiltModules;
 import com.healthtracker.app.ui.auth.LoginActivity_GeneratedInjector;
 import com.healthtracker.app.ui.auth.SignUpActivity_GeneratedInjector;
+import com.healthtracker.app.ui.common.QuickLogBottomSheet_GeneratedInjector;
 import com.healthtracker.app.ui.dashboard.DashboardActivity_GeneratedInjector;
 import com.healthtracker.app.ui.dashboard.DashboardViewModel_HiltModules;
 import com.healthtracker.app.ui.documents.DocumentVaultActivity_GeneratedInjector;
 import com.healthtracker.app.ui.documents.DocumentVaultViewModel_HiltModules;
 import com.healthtracker.app.ui.food.FoodLoggerActivity_GeneratedInjector;
 import com.healthtracker.app.ui.food.FoodLoggerViewModel_HiltModules;
+import com.healthtracker.app.ui.medications.AddMedicationBottomSheet_GeneratedInjector;
 import com.healthtracker.app.ui.medications.MedicationsActivity_GeneratedInjector;
 import com.healthtracker.app.ui.medications.MedicationsViewModel_HiltModules;
 import com.healthtracker.app.ui.profile.MedicalIdActivity_GeneratedInjector;
@@ -281,7 +283,9 @@ public final class HealthTrackerApp_HiltComponents {
       modules = ViewWithFragmentCBuilderModule.class
   )
   @FragmentScoped
-  public abstract static class FragmentC implements FragmentComponent,
+  public abstract static class FragmentC implements QuickLogBottomSheet_GeneratedInjector,
+      AddMedicationBottomSheet_GeneratedInjector,
+      FragmentComponent,
       DefaultViewModelFactories.FragmentEntryPoint,
       ViewComponentManager.ViewWithFragmentComponentBuilderEntryPoint,
       GeneratedComponent {

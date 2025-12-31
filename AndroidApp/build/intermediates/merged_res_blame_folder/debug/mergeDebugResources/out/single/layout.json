@@ -8,12 +8,16 @@
         "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/item_document.xml"
     },
     {
-        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/activity_dashboard.xml",
-        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/activity_dashboard.xml"
+        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/bottom_sheet_add_medication.xml",
+        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/bottom_sheet_add_medication.xml"
     },
     {
-        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/activity_dashboard.xml",
-        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/activity_dashboard.xml"
+        "merged": "com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/bottom_sheet_quick_log.xml",
+        "source": "com.healthtracker.app.AndroidApp-main-77:/layout/bottom_sheet_quick_log.xml"
+    },
+    {
+        "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/activity_dashboard.xml",
+        "source": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-main-77:/layout/activity_dashboard.xml"
     },
     {
         "merged": "/Users/macbookair/.gradle/daemon/8.9/com.healthtracker.app.AndroidApp-mergeDebugResources-74:/layout/activity_trends.xml",

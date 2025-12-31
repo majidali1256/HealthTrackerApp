@@ -26,6 +26,11 @@ class DashboardViewModel @Inject constructor(
     private val _recentLogs = MutableStateFlow<List<HealthLog>>(emptyList())
     val recentLogs: StateFlow<List<HealthLog>> = _recentLogs
     
+    // Goals (could be loaded from settings)
+    private val stepsGoal = 10000
+    private val sleepGoalHours = 8f
+    private val hydrationGoal = 8
+    
     fun loadDashboardData(userId: String) {
         viewModelScope.launch {
             // Load user info
@@ -43,6 +48,7 @@ class DashboardViewModel @Inject constructor(
                     heartRate = vital?.heartRate,
                     spO2 = vital?.spO2
                 )
+                recalculateHealthScore()
             }
         }
         
@@ -54,6 +60,7 @@ class DashboardViewModel @Inject constructor(
                     stepsGoal = activity?.stepsGoal ?: 10000,
                     caloriesBurned = activity?.caloriesBurned ?: 0
                 )
+                recalculateHealthScore()
             }
         }
         
@@ -66,6 +73,7 @@ class DashboardViewModel @Inject constructor(
                         sleepHours = hours,
                         sleepScore = it.sleepScore
                     )
+                    recalculateHealthScore()
                 }
             }
         }
@@ -81,7 +89,46 @@ class DashboardViewModel @Inject constructor(
             // Load today's hydration
             val hydration = healthRepository.getTodayHydration(userId) ?: 0f
             _uiState.value = _uiState.value.copy(hydrationGlasses = hydration.toInt())
+            recalculateHealthScore()
         }
+    }
+    
+    /**
+     * Calculate health score based on current metrics.
+     * Score is out of 100 points:
+     * - Steps: 25 points (based on goal progress)
+     * - Sleep: 25 points (based on 8 hour goal)
+     * - Hydration: 25 points (based on 8 glasses goal)
+     * - Heart Rate: 25 points (normal range 60-100 BPM)
+     */
+    private fun recalculateHealthScore() {
+        val state = _uiState.value
+        var score = 0
+        
+        // Steps score (0-25 points)
+        val stepsProgress = minOf(state.steps.toFloat() / stepsGoal, 1f)
+        score += (stepsProgress * 25).toInt()
+        
+        // Sleep score (0-25 points)
+        val sleepHours = state.sleepHours ?: 0f
+        val sleepProgress = minOf(sleepHours / sleepGoalHours, 1f)
+        score += (sleepProgress * 25).toInt()
+        
+        // Hydration score (0-25 points)
+        val hydrationProgress = minOf(state.hydrationGlasses.toFloat() / hydrationGoal, 1f)
+        score += (hydrationProgress * 25).toInt()
+        
+        // Heart rate score (0-25 points)
+        val heartRate = state.heartRate
+        score += when {
+            heartRate == null -> 12 // No data, give half points
+            heartRate in 60..100 -> 25 // Normal range
+            heartRate in 50..59 || heartRate in 101..110 -> 18 // Slightly off
+            heartRate in 40..49 || heartRate in 111..120 -> 10 // Concerning
+            else -> 5 // Very abnormal
+        }
+        
+        _uiState.value = _uiState.value.copy(healthScore = score)
     }
     
     fun getGreeting(): String {
@@ -111,7 +158,7 @@ class DashboardViewModel @Inject constructor(
                 // Refresh hydration display
                 refreshHydration(userId)
             } catch (e: Exception) {
-                // Handle error
+                // Log error silently - UI will show stale data
             }
         }
     }
@@ -138,7 +185,7 @@ class DashboardViewModel @Inject constructor(
                 )
                 healthRepository.addSleepRecord(sleepRecord)
             } catch (e: Exception) {
-                // Handle error
+                // Log error silently
             }
         }
     }
@@ -150,6 +197,7 @@ class DashboardViewModel @Inject constructor(
         viewModelScope.launch {
             val hydration = healthRepository.getTodayHydration(userId) ?: 0f
             _uiState.value = _uiState.value.copy(hydrationGlasses = hydration.toInt())
+            recalculateHealthScore()
         }
     }
 }
@@ -159,6 +207,7 @@ class DashboardViewModel @Inject constructor(
  */
 data class DashboardUiState(
     val userName: String = "User",
+    val healthScore: Int = 0,
     val heartRate: Int? = null,
     val spO2: Int? = null,
     val steps: Int = 0,
@@ -169,3 +218,4 @@ data class DashboardUiState(
     val hydrationGlasses: Int = 0,
     val isLoading: Boolean = false
 )
+

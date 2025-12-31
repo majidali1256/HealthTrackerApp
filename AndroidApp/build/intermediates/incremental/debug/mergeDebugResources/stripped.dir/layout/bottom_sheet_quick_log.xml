@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout 
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="24dp"
+    android:background="@color/background_primary">
+
+    <!-- Title -->
+    <TextView
+        android:id="@+id/tvQuickLogTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Quick Log"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvQuickLogSubtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What would you like to log?"
+        android:textSize="14sp"
+        android:textColor="@color/text_secondary"
+        android:layout_marginTop="4dp"
+        app:layout_constraintTop_toBottomOf="@id/tvQuickLogTitle"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <!-- Type Selection Buttons -->
+    <LinearLayout
+        android:id="@+id/typeButtonsContainer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvQuickLogSubtitle">
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogWater"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="💧\nWater"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            app:strokeColor="@color/hydration_cyan"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogSteps"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="👟\nSteps"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            app:strokeColor="@color/steps_teal"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogSleep"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="💤\nSleep"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            app:strokeColor="@color/sleep_purple"
+            app:cornerRadius="12dp"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnLogVitals"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+            android:layout_width="0dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="❤️\nVitals"
+            android:textSize="12sp"
+            android:textColor="@color/text_primary"
+            app:strokeColor="@color/heart_rate_red"
+            app:cornerRadius="12dp"/>
+    </LinearLayout>
+
+    <!-- Value Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/tilLogValue"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/typeButtonsContainer"
+        app:boxStrokeColor="@color/primary_blue"
+        app:hintTextColor="@color/text_secondary">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/etLogValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter value"
+            android:inputType="numberDecimal"
+            android:textColor="@color/text_primary"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Save Button -->
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnSaveLog"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="16dp"
+        android:text="Save"
+        android:textSize="16sp"
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/tilLogValue"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:backgroundTint="@color/primary_blue"
+        app:cornerRadius="12dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

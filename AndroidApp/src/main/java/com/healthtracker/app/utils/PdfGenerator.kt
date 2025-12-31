@@ -14,6 +14,7 @@ import com.itextpdf.layout.element.Paragraph
 import com.itextpdf.layout.element.Table
 import com.itextpdf.layout.properties.TextAlignment
 import com.itextpdf.layout.properties.UnitValue
+import dagger.hilt.android.qualifiers.ApplicationContext
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.Date
@@ -27,7 +28,7 @@ import javax.inject.Singleton
  */
 @Singleton
 class PdfGenerator @Inject constructor(
-    private val context: Context
+    @ApplicationContext private val context: Context
 ) {
     
     private val dateFormat = SimpleDateFormat("MMMM dd, yyyy", Locale.getDefault())

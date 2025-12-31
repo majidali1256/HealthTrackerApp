@@ -14,32 +14,29 @@ public class ActivityDashboardBindingImpl extends ActivityDashboardBinding  {
     static {
         sIncludes = null;
         sViewsWithIds = new android.util.SparseIntArray();
-        sViewsWithIds.put(R.id.headerSection, 1);
-        sViewsWithIds.put(R.id.tvGreeting, 2);
-        sViewsWithIds.put(R.id.tvUserName, 3);
-        sViewsWithIds.put(R.id.cardProfile, 4);
-        sViewsWithIds.put(R.id.ivProfile, 5);
-        sViewsWithIds.put(R.id.cardPrimaryMetric, 6);
-        sViewsWithIds.put(R.id.tvPrimaryMetricLabel, 7);
-        sViewsWithIds.put(R.id.tvPrimaryMetricValue, 8);
-        sViewsWithIds.put(R.id.tvPrimaryMetricUnit, 9);
-        sViewsWithIds.put(R.id.tvPrimaryMetricStatus, 10);
-        sViewsWithIds.put(R.id.metricRow, 11);
-        sViewsWithIds.put(R.id.cardSteps, 12);
-        sViewsWithIds.put(R.id.tvStepsValue, 13);
-        sViewsWithIds.put(R.id.progressSteps, 14);
-        sViewsWithIds.put(R.id.cardSleep, 15);
-        sViewsWithIds.put(R.id.tvSleepValue, 16);
-        sViewsWithIds.put(R.id.tvSleepScore, 17);
-        sViewsWithIds.put(R.id.cardHydration, 18);
-        sViewsWithIds.put(R.id.tvHydrationValue, 19);
-        sViewsWithIds.put(R.id.recentLogsSection, 20);
-        sViewsWithIds.put(R.id.tvRecentLogsTitle, 21);
-        sViewsWithIds.put(R.id.tvViewAll, 22);
-        sViewsWithIds.put(R.id.rvRecentLogs, 23);
-        sViewsWithIds.put(R.id.emptyState, 24);
-        sViewsWithIds.put(R.id.fabAddLog, 25);
-        sViewsWithIds.put(R.id.bottomNav, 26);
+        sViewsWithIds.put(R.id.tvGreeting, 1);
+        sViewsWithIds.put(R.id.tvUserName, 2);
+        sViewsWithIds.put(R.id.cardProfile, 3);
+        sViewsWithIds.put(R.id.ivProfile, 4);
+        sViewsWithIds.put(R.id.ivSearch, 5);
+        sViewsWithIds.put(R.id.scoreRingContainer, 6);
+        sViewsWithIds.put(R.id.progressScoreRing, 7);
+        sViewsWithIds.put(R.id.tvHealthScore, 8);
+        sViewsWithIds.put(R.id.tvScoreYear, 9);
+        sViewsWithIds.put(R.id.tvEditFavorites, 10);
+        sViewsWithIds.put(R.id.cardSteps, 11);
+        sViewsWithIds.put(R.id.tvStepsValue, 12);
+        sViewsWithIds.put(R.id.cardSleep, 13);
+        sViewsWithIds.put(R.id.tvSleepValue, 14);
+        sViewsWithIds.put(R.id.tvSleepScore, 15);
+        sViewsWithIds.put(R.id.cardHydration, 16);
+        sViewsWithIds.put(R.id.tvHydrationValue, 17);
+        sViewsWithIds.put(R.id.tvViewAll, 18);
+        sViewsWithIds.put(R.id.tvRecentLogsTitle, 19);
+        sViewsWithIds.put(R.id.rvRecentLogs, 20);
+        sViewsWithIds.put(R.id.emptyState, 21);
+        sViewsWithIds.put(R.id.fabAddLog, 22);
+        sViewsWithIds.put(R.id.bottomNav, 23);
     }
     // views
     @NonNull
@@ -50,36 +47,33 @@ public class ActivityDashboardBindingImpl extends ActivityDashboardBinding  {
     // Inverse Binding Event Handlers
 
     public ActivityDashboardBindingImpl(@Nullable androidx.databinding.DataBindingComponent bindingComponent, @NonNull View root) {
-        this(bindingComponent, root, mapBindings(bindingComponent, root, 27, sIncludes, sViewsWithIds));
+        this(bindingComponent, root, mapBindings(bindingComponent, root, 24, sIncludes, sViewsWithIds));
     }
     private ActivityDashboardBindingImpl(androidx.databinding.DataBindingComponent bindingComponent, View root, Object[] bindings) {
         super(bindingComponent, root, 0
-            , (com.google.android.material.bottomnavigation.BottomNavigationView) bindings[26]
-            , (com.google.android.material.card.MaterialCardView) bindings[18]
-            , (com.google.android.material.card.MaterialCardView) bindings[6]
-            , (com.google.android.material.card.MaterialCardView) bindings[4]
-            , (com.google.android.material.card.MaterialCardView) bindings[15]
-            , (com.google.android.material.card.MaterialCardView) bindings[12]
-            , (android.widget.LinearLayout) bindings[24]
-            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[25]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[1]
+            , (com.google.android.material.bottomnavigation.BottomNavigationView) bindings[23]
+            , (com.google.android.material.card.MaterialCardView) bindings[16]
+            , (com.google.android.material.card.MaterialCardView) bindings[3]
+            , (com.google.android.material.card.MaterialCardView) bindings[13]
+            , (com.google.android.material.card.MaterialCardView) bindings[11]
+            , (android.widget.LinearLayout) bindings[21]
+            , (com.google.android.material.floatingactionbutton.FloatingActionButton) bindings[22]
+            , (android.widget.ImageView) bindings[4]
             , (android.widget.ImageView) bindings[5]
-            , (android.widget.LinearLayout) bindings[11]
-            , (android.widget.ProgressBar) bindings[14]
-            , (androidx.constraintlayout.widget.ConstraintLayout) bindings[20]
-            , (androidx.recyclerview.widget.RecyclerView) bindings[23]
-            , (android.widget.TextView) bindings[2]
-            , (android.widget.TextView) bindings[19]
-            , (android.widget.TextView) bindings[7]
+            , (android.widget.ProgressBar) bindings[7]
+            , (androidx.recyclerview.widget.RecyclerView) bindings[20]
+            , (android.widget.FrameLayout) bindings[6]
             , (android.widget.TextView) bindings[10]
-            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[1]
             , (android.widget.TextView) bindings[8]
-            , (android.widget.TextView) bindings[21]
             , (android.widget.TextView) bindings[17]
-            , (android.widget.TextView) bindings[16]
-            , (android.widget.TextView) bindings[13]
-            , (android.widget.TextView) bindings[3]
-            , (android.widget.TextView) bindings[22]
+            , (android.widget.TextView) bindings[19]
+            , (android.widget.TextView) bindings[9]
+            , (android.widget.TextView) bindings[15]
+            , (android.widget.TextView) bindings[14]
+            , (android.widget.TextView) bindings[12]
+            , (android.widget.TextView) bindings[2]
+            , (android.widget.TextView) bindings[18]
             );
         this.mboundView0 = (androidx.coordinatorlayout.widget.CoordinatorLayout) bindings[0];
         this.mboundView0.setTag(null);

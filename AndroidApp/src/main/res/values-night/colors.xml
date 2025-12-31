@@ -1,6 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- Dark Theme Colors -->
+    <!-- ========================================= -->
+    <!-- DARK THEME - Premium Dark Navy Palette   -->
+    <!-- ========================================= -->
+    
+    <!-- Primary Brand Colors -->
     <color name="primary_blue">#6C9BFF</color>
     <color name="primary_blue_dark">#4A7AD9</color>
     <color name="primary_blue_light">#8CB4FF</color>
@@ -9,20 +13,40 @@
     <color name="primary_purple_dark">#8B5CF6</color>
     <color name="primary_purple_light">#C4B5FD</color>
     
-    <!-- Background Colors (Dark) -->
-    <color name="background_primary">#121212</color>
-    <color name="background_secondary">#1E1E1E</color>
-    <color name="card_background">#2A2A2A</color>
-    <color name="nav_background">#1A1A1A</color>
-    <color name="surface">#262626</color>
+    <!-- Background Colors (Dark Navy Theme) -->
+    <color name="background_primary">#0A1628</color>
+    <color name="background_secondary">#0A1628</color>
+    <color name="background_tertiary">#0F2744</color>
+    <color name="card_background">#0F2744</color>
+    <color name="nav_background">#0F2744</color>
+    <color name="surface_white">#163A5F</color>
+    <color name="surface_elevated">#163A5F</color>
+    <color name="surface_card">#0F2744</color>
     
-    <!-- Text Colors (Dark) -->
+    <!-- Dark Navy Theme (Same values as base) -->
+    <color name="dark_navy_bg">#0A1628</color>
+    <color name="dark_navy_card">#0F2744</color>
+    <color name="dark_navy_card_light">#163A5F</color>
+    <color name="dark_navy_surface">#1A3A5C</color>
+    
+    <!-- Text Colors (Dark Theme) -->
     <color name="text_primary">#FFFFFF</color>
-    <color name="text_secondary">#B3B3B3</color>
-    <color name="text_hint">#666666</color>
+    <color name="text_secondary">#B0BEC5</color>
+    <color name="text_tertiary">#78909C</color>
+    <color name="text_hint">#607D8B</color>
     <color name="text_on_primary">#FFFFFF</color>
+    <color name="text_on_dark">#FFFFFF</color>
     
-    <!-- Status Colors (Same in dark, slightly adjusted for visibility) -->
+    <!-- Navigation (Dark) -->
+    <color name="nav_selected">#00BCD4</color>
+    <color name="nav_unselected">#607D8B</color>
+    <color name="nav_indicator">#1A3A5C</color>
+    
+    <!-- FAB Colors (Dark) -->
+    <color name="fab_background">#00BCD4</color>
+    <color name="fab_icon">#FFFFFF</color>
+    
+    <!-- Status Colors (Brighter for dark background) -->
     <color name="heart_rate_red">#FF6B6B</color>
     <color name="steps_teal">#4ECDC4</color>
     <color name="sleep_purple">#A78BFA</color>
@@ -31,11 +55,28 @@
     <color name="warning_orange">#FB923C</color>
     <color name="error_red">#F87171</color>
     <color name="success_green">#4ADE80</color>
-    <color name="emergency_red">#EF4444</color>
+    <color name="emergency_red">#EF5350</color>
     
-    <!-- Divider -->
-    <color name="divider">#404040</color>
+    <!-- Card Effects (Dark) -->
+    <color name="card_shadow_dark">#000000</color>
+    <color name="card_border">#1A3A5C</color>
+    <color name="divider">#1A3A5C</color>
     
-    <!-- Facebook Blue -->
+    <!-- Neumorphic (Dark) -->
+    <color name="neumorphic_bg">#0A1628</color>
+    <color name="neumorphic_light">#163A5F</color>
+    <color name="neumorphic_dark">#050C15</color>
+    
+    <!-- Glass Effects (Dark) -->
+    <color name="glass_white">#1AFFFFFF</color>
+    <color name="glass_white_border">#33FFFFFF</color>
+    
+    <!-- Social Login (Same) -->
     <color name="facebook_blue">#1877F2</color>
+    <color name="google_red">#EA4335</color>
+    
+    <!-- Chip Colors (Dark) -->
+    <color name="chip_selected">#00BCD4</color>
+    <color name="chip_background">#1A3A5C</color>
+    <color name="chip_text">#B0BEC5</color>
 </resources>

@@ -90,18 +90,13 @@ class MedicationsActivity : AppCompatActivity() {
     }
 
     private fun showAddMedicationDialog() {
-        // TODO: Show bottom sheet for adding medication
-        val picker = MaterialTimePicker.Builder()
-            .setTimeFormat(TimeFormat.CLOCK_12H)
-            .setHour(9)
-            .setMinute(0)
-            .setTitleText("Select reminder time")
-            .build()
-        
-        picker.show(supportFragmentManager, "time_picker")
-        
-        picker.addOnPositiveButtonClickListener {
-            Toast.makeText(this, "Reminder set for ${picker.hour}:${picker.minute}", Toast.LENGTH_SHORT).show()
+        val bottomSheet = AddMedicationBottomSheet.newInstance()
+        bottomSheet.setOnMedicationAddedListener {
+            // Refresh medications list
+            firebaseAuth.currentUser?.uid?.let { userId ->
+                viewModel.loadMedications(userId)
+            }
         }
+        bottomSheet.show(supportFragmentManager, AddMedicationBottomSheet.TAG)
     }
 }

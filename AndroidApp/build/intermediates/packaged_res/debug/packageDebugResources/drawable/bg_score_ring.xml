@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Background -->
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="#1A3A5C" />
+        </shape>
+    </item>
+    <!-- Progress ring track -->
+    <item
+        android:left="8dp"
+        android:top="8dp"
+        android:right="8dp"
+        android:bottom="8dp">
+        <shape android:shape="oval">
+            <stroke
+                android:width="12dp"
+                android:color="#0D3B66" />
+            <solid android:color="@android:color/transparent" />
+        </shape>
+    </item>
+</layer-list>

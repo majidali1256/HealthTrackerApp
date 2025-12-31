@@ -4,13 +4,13 @@ package com.healthtracker.app.databinding;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.FrameLayout;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.recyclerview.widget.RecyclerView;
@@ -29,9 +29,6 @@ public abstract class ActivityDashboardBinding extends ViewDataBinding {
   public final MaterialCardView cardHydration;
 
   @NonNull
-  public final MaterialCardView cardPrimaryMetric;
-
-  @NonNull
   public final MaterialCardView cardProfile;
 
   @NonNull
@@ -47,43 +44,37 @@ public abstract class ActivityDashboardBinding extends ViewDataBinding {
   public final FloatingActionButton fabAddLog;
 
   @NonNull
-  public final ConstraintLayout headerSection;
-
-  @NonNull
   public final ImageView ivProfile;
 
   @NonNull
-  public final LinearLayout metricRow;
+  public final ImageView ivSearch;
 
   @NonNull
-  public final ProgressBar progressSteps;
-
-  @NonNull
-  public final ConstraintLayout recentLogsSection;
+  public final ProgressBar progressScoreRing;
 
   @NonNull
   public final RecyclerView rvRecentLogs;
 
   @NonNull
+  public final FrameLayout scoreRingContainer;
+
+  @NonNull
+  public final TextView tvEditFavorites;
+
+  @NonNull
   public final TextView tvGreeting;
+
+  @NonNull
+  public final TextView tvHealthScore;
 
   @NonNull
   public final TextView tvHydrationValue;
 
   @NonNull
-  public final TextView tvPrimaryMetricLabel;
-
-  @NonNull
-  public final TextView tvPrimaryMetricStatus;
-
-  @NonNull
-  public final TextView tvPrimaryMetricUnit;
-
-  @NonNull
-  public final TextView tvPrimaryMetricValue;
-
-  @NonNull
   public final TextView tvRecentLogsTitle;
+
+  @NonNull
+  public final TextView tvScoreYear;
 
   @NonNull
   public final TextView tvSleepScore;
@@ -101,37 +92,33 @@ public abstract class ActivityDashboardBinding extends ViewDataBinding {
   public final TextView tvViewAll;
 
   protected ActivityDashboardBinding(Object _bindingComponent, View _root, int _localFieldCount,
-      BottomNavigationView bottomNav, MaterialCardView cardHydration,
-      MaterialCardView cardPrimaryMetric, MaterialCardView cardProfile, MaterialCardView cardSleep,
-      MaterialCardView cardSteps, LinearLayout emptyState, FloatingActionButton fabAddLog,
-      ConstraintLayout headerSection, ImageView ivProfile, LinearLayout metricRow,
-      ProgressBar progressSteps, ConstraintLayout recentLogsSection, RecyclerView rvRecentLogs,
-      TextView tvGreeting, TextView tvHydrationValue, TextView tvPrimaryMetricLabel,
-      TextView tvPrimaryMetricStatus, TextView tvPrimaryMetricUnit, TextView tvPrimaryMetricValue,
-      TextView tvRecentLogsTitle, TextView tvSleepScore, TextView tvSleepValue,
-      TextView tvStepsValue, TextView tvUserName, TextView tvViewAll) {
+      BottomNavigationView bottomNav, MaterialCardView cardHydration, MaterialCardView cardProfile,
+      MaterialCardView cardSleep, MaterialCardView cardSteps, LinearLayout emptyState,
+      FloatingActionButton fabAddLog, ImageView ivProfile, ImageView ivSearch,
+      ProgressBar progressScoreRing, RecyclerView rvRecentLogs, FrameLayout scoreRingContainer,
+      TextView tvEditFavorites, TextView tvGreeting, TextView tvHealthScore,
+      TextView tvHydrationValue, TextView tvRecentLogsTitle, TextView tvScoreYear,
+      TextView tvSleepScore, TextView tvSleepValue, TextView tvStepsValue, TextView tvUserName,
+      TextView tvViewAll) {
     super(_bindingComponent, _root, _localFieldCount);
     this.bottomNav = bottomNav;
     this.cardHydration = cardHydration;
-    this.cardPrimaryMetric = cardPrimaryMetric;
     this.cardProfile = cardProfile;
     this.cardSleep = cardSleep;
     this.cardSteps = cardSteps;
     this.emptyState = emptyState;
     this.fabAddLog = fabAddLog;
-    this.headerSection = headerSection;
     this.ivProfile = ivProfile;
-    this.metricRow = metricRow;
-    this.progressSteps = progressSteps;
-    this.recentLogsSection = recentLogsSection;
+    this.ivSearch = ivSearch;
+    this.progressScoreRing = progressScoreRing;
     this.rvRecentLogs = rvRecentLogs;
+    this.scoreRingContainer = scoreRingContainer;
+    this.tvEditFavorites = tvEditFavorites;
     this.tvGreeting = tvGreeting;
+    this.tvHealthScore = tvHealthScore;
     this.tvHydrationValue = tvHydrationValue;
-    this.tvPrimaryMetricLabel = tvPrimaryMetricLabel;
-    this.tvPrimaryMetricStatus = tvPrimaryMetricStatus;
-    this.tvPrimaryMetricUnit = tvPrimaryMetricUnit;
-    this.tvPrimaryMetricValue = tvPrimaryMetricValue;
     this.tvRecentLogsTitle = tvRecentLogsTitle;
+    this.tvScoreYear = tvScoreYear;
     this.tvSleepScore = tvSleepScore;
     this.tvSleepValue = tvSleepValue;
     this.tvStepsValue = tvStepsValue;
