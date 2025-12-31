@@ -3,6 +3,7 @@ import SwiftUI
 struct DashboardView: View {
     @EnvironmentObject var healthViewModel: HealthViewModel
     @EnvironmentObject var settingsManager: SettingsManager
+    @State private var selectedMetric: MetricType? = nil
     @State private var showingAddWaterSheet = false
     @State private var showingLogVitalsSheet = false
     @State private var showingProfileSheet = false
@@ -195,32 +196,36 @@ struct DashboardView: View {
             // Horizontal Scrolling Cards
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    // Steps Card
-                    FavoriteMetricCard(
-                        emoji: "👟",
-                        title: "Steps",
-                        subtitle: "Today",
-                        value1: "\(healthViewModel.todaySteps.formatted())",
-                        unit1: "steps",
-                        value2: "280",
-                        unit2: "kcal",
-                        gradient: AppTheme.cardTealGradient
-                    )
+                    // Steps Card - Tappable
+                    Button(action: { selectedMetric = .steps }) {
+                        FavoriteMetricCard(
+                            emoji: "👟",
+                            title: "Steps",
+                            subtitle: "Today",
+                            value1: "\(healthViewModel.todaySteps.formatted())",
+                            unit1: "steps",
+                            value2: "280",
+                            unit2: "kcal",
+                            gradient: AppTheme.cardTealGradient
+                        )
+                    }
                     
-                    // Sleep Card
-                    FavoriteMetricCard(
-                        emoji: "💤",
-                        title: "Sleep",
-                        subtitle: "Last night",
-                        value1: String(format: "%.1f", healthViewModel.todaySleepHours),
-                        unit1: "hours",
-                        value2: "\(healthViewModel.sleepScore)",
-                        unit2: "score",
-                        gradient: AppTheme.cardIndigoGradient
-                    )
+                    // Sleep Card - Tappable
+                    Button(action: { selectedMetric = .sleep }) {
+                        FavoriteMetricCard(
+                            emoji: "💤",
+                            title: "Sleep",
+                            subtitle: "Last night",
+                            value1: String(format: "%.1f", healthViewModel.todaySleepHours),
+                            unit1: "hours",
+                            value2: "\(healthViewModel.sleepScore)",
+                            unit2: "score",
+                            gradient: AppTheme.cardIndigoGradient
+                        )
+                    }
                     
                     // Water Card - Tappable
-                    Button(action: { showingAddWaterSheet = true }) {
+                    Button(action: { selectedMetric = .water }) {
                         FavoriteMetricCard(
                             emoji: "💧",
                             title: "Water",
@@ -233,20 +238,44 @@ struct DashboardView: View {
                         )
                     }
                     
-                    // Heart Rate Card
-                    FavoriteMetricCard(
-                        emoji: "❤️",
-                        title: "Heart",
-                        subtitle: "Last reading",
-                        value1: "\(healthViewModel.lastHeartRate)",
-                        unit1: "BPM",
-                        value2: healthViewModel.heartRateStatus,
-                        unit2: "status",
-                        gradient: AppTheme.cardRedGradient
-                    )
+                    // Heart Rate Card - Tappable
+                    Button(action: { selectedMetric = .heartRate }) {
+                        FavoriteMetricCard(
+                            emoji: "❤️",
+                            title: "Heart",
+                            subtitle: "Last reading",
+                            value1: "\(healthViewModel.lastHeartRate)",
+                            unit1: "BPM",
+                            value2: healthViewModel.heartRateStatus,
+                            unit2: "status",
+                            gradient: AppTheme.cardRedGradient
+                        )
+                    }
                 }
                 .padding(.horizontal, 16)
             }
+        }
+        .sheet(item: $selectedMetric) { metric in
+            NavigationStack {
+                ZStack {
+                    switch metric {
+                    case .steps: StepsDetailView()
+                    case .sleep: SleepDetailView()
+                    case .water: WaterDetailView()
+                    case .heartRate: HeartRateDetailView()
+                    }
+                }
+                .navigationTitle(metric.title)
+                .navigationBarTitleDisplayMode(.inline)
+                .toolbar {
+                    ToolbarItem(placement: .topBarTrailing) {
+                        Button("Done") { selectedMetric = nil }
+                            .foregroundColor(AppTheme.accentTeal)
+                    }
+                }
+            }
+            .presentationDetents([.medium, .large])
+            .preferredColorScheme(settingsManager.colorScheme)
         }
     }
     
