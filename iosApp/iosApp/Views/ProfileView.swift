@@ -45,7 +45,7 @@ struct ProfileView: View {
         .alert("Sign Out", isPresented: $showingSignOutAlert) {
             Button("Cancel", role: .cancel) {}
             Button("Sign Out", role: .destructive) {
-                // Handle sign out
+                settingsManager.signOut()
             }
         } message: {
             Text("Are you sure you want to sign out?")
@@ -342,7 +342,7 @@ struct MedicalIDSheet: View {
                                 }
                             }
                             .pickerStyle(.menu)
-                            .onChange(of: viewModel.medicalID.bloodType) { _, _ in viewModel.save() }
+                            .onChange(of: viewModel.medicalID.bloodType) { _ in viewModel.save() }
                         }
                         .padding()
                         .background(AppTheme.darkNavyCard)
@@ -357,7 +357,7 @@ struct MedicalIDSheet: View {
                         .padding()
                         .background(AppTheme.darkNavyCard)
                         .clipShape(RoundedRectangle(cornerRadius: 12))
-                        .onChange(of: viewModel.medicalID.organDonor) { _, _ in viewModel.save() }
+                        .onChange(of: viewModel.medicalID.organDonor) { _ in viewModel.save() }
                         
                         // Allergies
                         sectionView(title: "Allergies", items: viewModel.medicalID.allergies, icon: "exclamationmark.triangle.fill", color: AppTheme.accentOrange) {

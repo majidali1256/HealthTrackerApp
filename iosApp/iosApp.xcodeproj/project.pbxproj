@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		001 /* HealthTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101; };
-		002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102; };
-		003 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103; };
-		004 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104; };
-		005 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105; };
-		006 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106; };
-		007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201; };
-		008 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107; };
-		009 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108; };
-		010 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109; };
-		011 /* HealthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110; };
-		012 /* FeatureViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111; };
+		001 /* HealthTrackerApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101 /* HealthTrackerApp.swift */; };
+		002 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 102 /* ContentView.swift */; };
+		003 /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103 /* DashboardView.swift */; };
+		004 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104 /* ProfileView.swift */; };
+		005 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 105 /* ToolsView.swift */; };
+		006 /* TrendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 106 /* TrendsView.swift */; };
+		007 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 201 /* Assets.xcassets */; };
+		008 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 107 /* Theme.swift */; };
+		009 /* SettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108 /* SettingsManager.swift */; };
+		010 /* HealthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109 /* HealthViewModel.swift */; };
+		011 /* HealthModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110 /* HealthModels.swift */; };
+		012 /* FeatureViewModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 111 /* FeatureViewModels.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -112,7 +112,7 @@
 /* Begin PBXNativeTarget section */
 		700 /* iosApp */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 900;
+			buildConfigurationList = 900 /* Build configuration list for PBXNativeTarget "iosApp" */;
 			buildPhases = (
 				701 /* Sources */,
 				300 /* Frameworks */,
@@ -142,7 +142,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 901;
+			buildConfigurationList = 901 /* Build configuration list for PBXProject "iosApp" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -245,7 +245,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
@@ -302,7 +302,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -319,7 +319,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 25NBWFJ7QM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -347,7 +347,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = "";
+				DEVELOPMENT_TEAM = 25NBWFJ7QM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;

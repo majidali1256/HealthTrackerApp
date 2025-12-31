@@ -29,10 +29,29 @@ class SettingsManager: ObservableObject {
     @AppStorage("userEmail") var userEmail: String = ""
     @AppStorage("isPremiumUser") var isPremiumUser: Bool = false
     
+    // MARK: - Auth State
+    @AppStorage("isLoggedIn") var isLoggedIn: Bool = true  // Default true for demo
+    
     // MARK: - Singleton
     static let shared = SettingsManager()
     
     private init() {}
+    
+    // MARK: - Sign Out
+    func signOut() {
+        isLoggedIn = false
+        userName = "User"
+        userEmail = ""
+        objectWillChange.send()
+    }
+    
+    // MARK: - Sign In (for demo)
+    func signIn(name: String, email: String) {
+        userName = name
+        userEmail = email
+        isLoggedIn = true
+        objectWillChange.send()
+    }
     
     // MARK: - Color Scheme Preference
     var colorScheme: ColorScheme? {
