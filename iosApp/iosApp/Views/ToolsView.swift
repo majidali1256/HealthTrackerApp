@@ -1,19 +1,26 @@
 import SwiftUI
+import UniformTypeIdentifiers
+import UserNotifications
 
 struct ToolsView: View {
     @EnvironmentObject var healthViewModel: HealthViewModel
+    // ... (unchanged properties)
     @EnvironmentObject var settingsManager: SettingsManager
-    @StateObject private var medicationsVM = MedicationsViewModel.shared
-    @StateObject private var foodLogVM = FoodLogViewModel.shared
-    @StateObject private var symptomsVM = SymptomsViewModel.shared
-    @StateObject private var documentsVM = DocumentsViewModel.shared
+    @State private var showingLogVitalsSheet = false
     
+    // Sheet States
     @State private var showingEmergencySOS = false
     @State private var showingMedications = false
     @State private var showingFoodLog = false
     @State private var showingSymptoms = false
     @State private var showingDocuments = false
     @State private var showingExportSheet = false
+    
+    // View Models
+    @StateObject private var medicationsVM = MedicationsViewModel.shared
+    @StateObject private var foodLogVM = FoodLogViewModel.shared
+    @StateObject private var symptomsVM = SymptomsViewModel.shared
+    @StateObject private var documentsVM = DocumentsViewModel.shared
     
     var body: some View {
         NavigationStack {
@@ -31,7 +38,11 @@ struct ToolsView: View {
                 }
             }
         }
+        .onAppear {
+            UNUserNotificationCenter.current().requestAuthorization(options: [.alert, .badge, .sound]) { _, _ in }
+        }
         .preferredColorScheme(settingsManager.colorScheme)
+        // ... (rest of modifiers)
         .alert("Emergency SOS", isPresented: $showingEmergencySOS) {
             Button("Cancel", role: .cancel) {}
             Button("Call Emergency", role: .destructive) { callEmergency() }
@@ -43,6 +54,7 @@ struct ToolsView: View {
         .sheet(isPresented: $showingSymptoms) { SymptomsFullSheet() }
         .sheet(isPresented: $showingDocuments) { DocumentsFullSheet() }
         .sheet(isPresented: $showingExportSheet) { ExportSheet() }
+        .sheet(isPresented: $showingLogVitalsSheet) { LogVitalsSheet() }
     }
     
     private var headerSection: some View {
@@ -60,6 +72,8 @@ struct ToolsView: View {
         .padding(.top, 60)
     }
     
+    // ... emergencySOSCard omitted (unchanged) ...
+    
     private var emergencySOSCard: some View {
         Button(action: { showingEmergencySOS = true }) {
             HStack(spacing: 16) {
@@ -76,7 +90,7 @@ struct ToolsView: View {
                         .font(.headline)
                         .fontWeight(.bold)
                         .foregroundColor(.white)
-                    Text("Tap to share GPS with emergency contacts")
+                    Text("Tap to call emergency services") // Changed text
                         .font(.caption)
                         .foregroundColor(.white.opacity(0.8))
                 }
@@ -91,9 +105,11 @@ struct ToolsView: View {
         }
         .padding(.horizontal, 20)
     }
-    
+
     private func callEmergency() {
-        print("Emergency SOS activated!")
+        if let url = URL(string: "tel://911"), UIApplication.shared.canOpenURL(url) {
+            UIApplication.shared.open(url)
+        }
     }
     
     private var quickActionsSection: some View {
@@ -105,11 +121,15 @@ struct ToolsView: View {
             
             ScrollView(.horizontal, showsIndicators: false) {
                 HStack(spacing: 12) {
-                    QuickActionButton(icon: "heart.fill", title: "Log Vitals", color: AppTheme.accentRed) {}
+                    QuickActionButton(icon: "heart.fill", title: "Log Vitals", color: AppTheme.accentRed) {
+                        showingLogVitalsSheet = true
+                    }
                     QuickActionButton(icon: "drop.fill", title: "Add Water", color: AppTheme.accentBlue) {
                         healthViewModel.addWater()
                     }
-                    QuickActionButton(icon: "moon.fill", title: "Log Sleep", color: AppTheme.accentPurple) {}
+                    QuickActionButton(icon: "moon.fill", title: "Log Sleep", color: AppTheme.accentPurple) {
+                        showingLogVitalsSheet = true // Reusing LogVitalsSheet which has Sleep option
+                    }
                     QuickActionButton(icon: "fork.knife", title: "Log Food", color: AppTheme.accentGreen) {
                         showingFoodLog = true
                     }
@@ -787,6 +807,8 @@ struct AddDocumentSheet: View {
     @State private var title = ""
     @State private var type: DocumentType = .other
     @State private var notes = ""
+    @State private var showingFileImporter = false
+    @State private var selectedFileName: String? = nil
     
     var body: some View {
         NavigationStack {
@@ -803,6 +825,26 @@ struct AddDocumentSheet: View {
                         }
                     }
                     .pickerStyle(.menu)
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(AppTheme.darkNavyCard)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+                    
+                    Button(action: { showingFileImporter = true }) {
+                        HStack {
+                            Image(systemName: selectedFileName == nil ? "paperclip" : "checkmark.circle.fill")
+                            Text(selectedFileName ?? "Attach File")
+                        }
+                        .foregroundColor(AppTheme.accentTeal)
+                        .padding()
+                        .frame(maxWidth: .infinity)
+                        .background(AppTheme.darkNavyCard)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 12)
+                                .stroke(AppTheme.accentTeal, style: StrokeStyle(lineWidth: 1, dash: [5]))
+                        )
+                    }
                     
                     TextField("Notes", text: $notes)
                         .textFieldStyle(.roundedBorder)
@@ -827,6 +869,25 @@ struct AddDocumentSheet: View {
             .toolbar {
                 ToolbarItem(placement: .topBarTrailing) {
                     Button("Cancel") { dismiss() }.foregroundColor(AppTheme.accentTeal)
+                }
+            }
+            .fileImporter(
+                isPresented: $showingFileImporter,
+                allowedContentTypes: [.item],
+                allowsMultipleSelection: false
+            ) { result in
+                switch result {
+                case .success(let urls):
+                    if let url = urls.first {
+                        // In a real app, we would copy the file to the app's document directory.
+                        // For now, we just save the name to show it was picked.
+                        selectedFileName = url.lastPathComponent
+                        if title.isEmpty {
+                            title = url.deletingPathExtension().lastPathComponent
+                        }
+                    }
+                case .failure(let error):
+                    print("Error selecting file: \(error.localizedDescription)")
                 }
             }
         }

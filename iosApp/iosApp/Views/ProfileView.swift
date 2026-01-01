@@ -19,16 +19,14 @@ struct ProfileView: View {
                         // MARK: - Profile Header
                         profileHeader
                         
+                        bodyStatsGrid
+                        
                         // MARK: - Stats Cards
                         statsSection
                             .padding(.top, 24)
                         
                         // MARK: - Settings Sections
                         settingsSection
-                            .padding(.top, 24)
-                        
-                        // MARK: - Sign Out Button
-                        signOutButton
                             .padding(.top, 24)
                         
                         // Version
@@ -42,14 +40,6 @@ struct ProfileView: View {
             }
         }
         .preferredColorScheme(settingsManager.colorScheme)
-        .alert("Sign Out", isPresented: $showingSignOutAlert) {
-            Button("Cancel", role: .cancel) {}
-            Button("Sign Out", role: .destructive) {
-                settingsManager.signOut()
-            }
-        } message: {
-            Text("Are you sure you want to sign out?")
-        }
         .sheet(isPresented: $showingEditProfile) {
             EditProfileSheet()
         }
@@ -90,32 +80,29 @@ struct ProfileView: View {
                     .fontWeight(.bold)
                     .foregroundColor(AppTheme.textPrimary)
                 
-                Text(settingsManager.userEmail.isEmpty ? "user@email.com" : settingsManager.userEmail)
+                Text("user@example.com") // Placeholder as auth is removed
                     .font(.subheadline)
                     .foregroundColor(AppTheme.textSecondary)
             }
-            
-            // Member Badge
-            if settingsManager.isPremiumUser {
-                HStack(spacing: 6) {
-                    Image(systemName: "crown.fill")
-                        .font(.caption)
-                        .foregroundColor(AppTheme.accentOrange)
-                    Text("Premium Member")
-                        .font(.caption)
-                        .fontWeight(.medium)
-                        .foregroundColor(AppTheme.accentOrange)
-                }
-                .padding(.horizontal, 16)
-                .padding(.vertical, 8)
-                .background(AppTheme.accentOrange.opacity(0.15))
-                .clipShape(Capsule())
-            }
         }
-        .padding(.top, 60)
-        .padding(.bottom, 24)
     }
     
+    // MARK: - Body Stats Grid
+    private var bodyStatsGrid: some View {
+        HStack(spacing: 20) {
+            BodyStatItem(value: settingsManager.userAge, unit: "Age", icon: "calendar")
+            Divider().frame(height: 30).background(AppTheme.darkNavyCardLight)
+            BodyStatItem(value: settingsManager.userWeight, unit: "kg", icon: "scalemass.fill")
+            Divider().frame(height: 30).background(AppTheme.darkNavyCardLight)
+            BodyStatItem(value: settingsManager.userHeight, unit: "cm", icon: "ruler.fill")
+        }
+        .padding(.vertical, 16)
+        .padding(.horizontal, 24)
+        .background(AppTheme.darkNavyCard)
+        .clipShape(Capsule())
+        .padding(.bottom, 16)
+    }
+
     // MARK: - Stats Section
     private var statsSection: some View {
         HStack(spacing: 12) {
@@ -215,28 +202,6 @@ struct ProfileView: View {
             }
         }
     }
-    
-    // MARK: - Sign Out Button
-    private var signOutButton: some View {
-        Button(action: { showingSignOutAlert = true }) {
-            HStack {
-                Spacer()
-                Image(systemName: "rectangle.portrait.and.arrow.right")
-                Text("Sign Out")
-                    .fontWeight(.semibold)
-                Spacer()
-            }
-            .foregroundColor(AppTheme.accentRed)
-            .padding()
-            .background(AppTheme.accentRed.opacity(0.1))
-            .clipShape(RoundedRectangle(cornerRadius: 12))
-            .overlay(
-                RoundedRectangle(cornerRadius: 12)
-                    .stroke(AppTheme.accentRed.opacity(0.3), lineWidth: 1)
-            )
-        }
-        .padding(.horizontal, 20)
-    }
 }
 
 // MARK: - Edit Profile Sheet
@@ -245,6 +210,9 @@ struct EditProfileSheet: View {
     @StateObject private var settingsManager = SettingsManager.shared
     @State private var name: String = ""
     @State private var email: String = ""
+    @State private var age: String = ""
+    @State private var weight: String = ""
+    @State private var height: String = ""
     
     var body: some View {
         NavigationStack {
@@ -266,9 +234,18 @@ struct EditProfileSheet: View {
                         TextField("Name", text: $name)
                             .textFieldStyle(.roundedBorder)
                         
-                        TextField("Email", text: $email)
+                        TextField("Age", text: $age)
                             .textFieldStyle(.roundedBorder)
-                            .keyboardType(.emailAddress)
+                            .keyboardType(.numberPad)
+                            
+                        HStack {
+                            TextField("Weight (kg)", text: $weight)
+                                .textFieldStyle(.roundedBorder)
+                                .keyboardType(.decimalPad)
+                            TextField("Height (cm)", text: $height)
+                                .textFieldStyle(.roundedBorder)
+                                .keyboardType(.decimalPad)
+                        }
                     }
                     .padding(.horizontal, 20)
                     
@@ -297,7 +274,9 @@ struct EditProfileSheet: View {
             }
             .onAppear {
                 name = settingsManager.userName
-                email = settingsManager.userEmail
+                age = settingsManager.userAge
+                weight = settingsManager.userWeight
+                height = settingsManager.userHeight
             }
         }
         .preferredColorScheme(.dark)
@@ -305,8 +284,35 @@ struct EditProfileSheet: View {
     
     private func saveProfile() {
         settingsManager.userName = name
-        settingsManager.userEmail = email
+        settingsManager.userAge = age
+        settingsManager.userWeight = weight
+        settingsManager.userHeight = height
         dismiss()
+    }
+}
+
+// MARK: - Body Stat Item Helper
+struct BodyStatItem: View {
+    let value: String
+    let unit: String
+    let icon: String
+    
+    var body: some View {
+        VStack(spacing: 4) {
+            Image(systemName: icon)
+                .font(.caption)
+                .foregroundColor(AppTheme.textSecondary)
+            HStack(alignment: .lastTextBaseline, spacing: 2) {
+                Text(value.isEmpty ? "--" : value)
+                    .font(.headline)
+                    .fontWeight(.bold)
+                    .foregroundColor(AppTheme.textPrimary)
+                Text(unit)
+                    .font(.caption2)
+                    .foregroundColor(AppTheme.textMuted)
+            }
+        }
+        .frame(minWidth: 60)
     }
 }
 
@@ -455,6 +461,7 @@ struct MedicalIDSheet: View {
                 Spacer()
                 Button(action: onAdd) {
                     Image(systemName: "plus.circle.fill")
+                    
                         .foregroundColor(AppTheme.accentTeal)
                 }
             }

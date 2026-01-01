@@ -206,3 +206,20 @@ enum HealthLogType {
         }
     }
 }
+
+// MARK: - Metric Type
+enum MetricType: String, Identifiable {
+    case steps, sleep, water, heartRate, calories
+    
+    var id: String { self.rawValue }
+    
+    var title: String {
+        switch self {
+        case .steps: return "Steps"
+        case .sleep: return "Sleep Analysis"
+        case .water: return "Hydration"
+        case .heartRate: return "Heart Rate"
+        case .calories: return "Calories"
+        }
+    }
+}

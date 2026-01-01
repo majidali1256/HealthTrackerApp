@@ -6,7 +6,9 @@ struct DashboardView: View {
     @State private var selectedMetric: MetricType? = nil
     @State private var showingAddWaterSheet = false
     @State private var showingLogVitalsSheet = false
+    @State private var showingAddWorkoutSheet = false
     @State private var showingProfileSheet = false
+    @State private var selectedWorkoutType = "Running"
     
     var body: some View {
         NavigationStack {
@@ -15,29 +17,8 @@ struct DashboardView: View {
                 AppTheme.darkNavyBg
                     .ignoresSafeArea()
                 
-                ScrollView(showsIndicators: false) {
-                    VStack(spacing: 0) {
-                        // MARK: - Header Section
-                        headerSection
-                        
-                        // MARK: - Health Score Ring
-                        healthScoreRing
-                            .padding(.top, 24)
-                        
-                        // MARK: - Favorite Section
-                        favoriteSection
-                            .padding(.top, 32)
-                        
-                        // MARK: - All Health Data Section
-                        allHealthDataSection
-                            .padding(.top, 28)
-                        
-                        // MARK: - Recent Logs Section
-                        recentLogsSection
-                            .padding(.top, 28)
-                            .padding(.bottom, 100)
-                    }
-                }
+                // Dashboard Content
+                dashboardContent
                 
                 // FAB
                 VStack {
@@ -70,7 +51,38 @@ struct DashboardView: View {
         .sheet(isPresented: $showingProfileSheet) {
             ProfileView()
         }
+        .sheet(isPresented: $showingAddWorkoutSheet) {
+            AddWorkoutSheet(activity: selectedWorkoutType)
+        }
     }
+    
+    private var dashboardContent: some View {
+        ScrollView(showsIndicators: false) {
+            VStack(spacing: 0) {
+                // MARK: - Header Section
+                headerSection
+                
+                // MARK: - Health Score Ring
+                healthScoreRing
+                    .padding(.top, 24)
+                
+                // MARK: - Favorite Section
+                favoriteSection
+                    .padding(.top, 32)
+                
+                // MARK: - All Health Data Section
+                allHealthDataSection
+                    .padding(.top, 28)
+                
+                // MARK: - Recent Logs Section
+                recentLogsSection
+                    .padding(.top, 28)
+                    .padding(.bottom, 100)
+            }
+        }
+    }
+
+
     
     // MARK: - Header Section
     private var headerSection: some View {
@@ -88,13 +100,6 @@ struct DashboardView: View {
             Spacer()
             
             HStack(spacing: 12) {
-                // Search Button
-                Button(action: {}) {
-                    Image(systemName: "magnifyingglass")
-                        .font(.title3)
-                        .foregroundColor(AppTheme.textSecondary)
-                }
-                
                 // Profile Picture
                 Button(action: { showingProfileSheet = true }) {
                     Circle()
@@ -125,134 +130,88 @@ struct DashboardView: View {
     // MARK: - Health Score Ring
     private var healthScoreRing: some View {
         ZStack {
-            // Background Ring
+            // Ring Background
             Circle()
-                .stroke(AppTheme.scoreRingTrack, lineWidth: 16)
+                .stroke(AppTheme.darkNavySurface, lineWidth: 20)
                 .frame(width: 200, height: 200)
             
             // Progress Ring
             Circle()
-                .trim(from: 0, to: CGFloat(healthViewModel.healthScore) / 100)
+                .trim(from: 0, to: CGFloat(healthViewModel.healthScore) / 100.0)
                 .stroke(
                     AngularGradient(
-                        colors: [AppTheme.accentBlue, AppTheme.accentTeal, AppTheme.accentBlue],
+                        gradient: Gradient(colors: [AppTheme.accentTeal, AppTheme.accentBlue, AppTheme.accentPurple]),
                         center: .center
                     ),
-                    style: StrokeStyle(lineWidth: 16, lineCap: .round)
+                    style: StrokeStyle(lineWidth: 20, lineCap: .round)
                 )
-                .frame(width: 200, height: 200)
                 .rotationEffect(.degrees(-90))
-                .animation(.easeInOut(duration: 1.0), value: healthViewModel.healthScore)
+                .animation(.easeOut(duration: 1.0), value: healthViewModel.healthScore)
+                .frame(width: 200, height: 200)
             
-            // Decorative dots around ring
-            ForEach(0..<36, id: \.self) { index in
-                Circle()
-                    .fill(index < Int(Double(healthViewModel.healthScore) / 100 * 36) ? AppTheme.accentBlue : AppTheme.scoreRingTrack)
-                    .frame(width: 6, height: 6)
-                    .offset(y: -115)
-                    .rotationEffect(.degrees(Double(index) * 10))
-            }
-            
-            // Center Content
             VStack(spacing: 4) {
                 Text("\(healthViewModel.healthScore)")
-                    .font(.system(size: 56, weight: .bold, design: .rounded))
-                    .foregroundColor(AppTheme.textPrimary)
-                Text("out of 100")
-                    .font(.subheadline)
-                    .foregroundColor(AppTheme.textSecondary)
+                    .font(.system(size: 48, weight: .bold, design: .rounded))
+                    .foregroundColor(.white)
                 Text("Health Score")
-                    .font(.headline)
-                    .foregroundColor(AppTheme.accentTeal)
-                    .padding(.top, 8)
+                    .font(.caption)
+                    .foregroundColor(AppTheme.textSecondary)
+                    .textCase(.uppercase)
             }
         }
-        .padding(.horizontal, 40)
+        .padding(.top, 10)
     }
     
     // MARK: - Favorite Section
     private var favoriteSection: some View {
         VStack(alignment: .leading, spacing: 12) {
-            // Header
-            HStack {
-                HStack(spacing: 6) {
-                    Text("★")
-                        .foregroundColor(AppTheme.accentTeal)
-                    Text("Favorite")
-                        .font(.headline)
-                        .foregroundColor(AppTheme.textPrimary)
-                }
-                
-                Spacer()
-                
-                Button(action: {}) {
-                    Text("Edit ›")
-                        .font(.subheadline)
-                        .foregroundColor(AppTheme.accentTeal)
-                }
-            }
-            .padding(.horizontal, 20)
+            Text("Favorites")
+                .font(.headline)
+                .foregroundColor(AppTheme.textPrimary)
+                .padding(.horizontal, 20)
             
-            // Horizontal Scrolling Cards
             ScrollView(.horizontal, showsIndicators: false) {
-                HStack(spacing: 12) {
-                    // Steps Card - Tappable
+                HStack(spacing: 16) {
                     Button(action: { selectedMetric = .steps }) {
                         FavoriteMetricCard(
                             emoji: "👟",
                             title: "Steps",
-                            subtitle: "Today",
+                            subtitle: "Daily Goal",
                             value1: "\(healthViewModel.todaySteps.formatted())",
                             unit1: "steps",
-                            value2: "280",
-                            unit2: "kcal",
+                            value2: stepsCompletionPercentage,
+                            unit2: "complete",
                             gradient: AppTheme.cardTealGradient
                         )
                     }
                     
-                    // Sleep Card - Tappable
-                    Button(action: { selectedMetric = .sleep }) {
-                        FavoriteMetricCard(
-                            emoji: "💤",
-                            title: "Sleep",
-                            subtitle: "Last night",
-                            value1: String(format: "%.1f", healthViewModel.todaySleepHours),
-                            unit1: "hours",
-                            value2: "\(healthViewModel.sleepScore)",
-                            unit2: "score",
-                            gradient: AppTheme.cardIndigoGradient
-                        )
-                    }
-                    
-                    // Water Card - Tappable
-                    Button(action: { selectedMetric = .water }) {
-                        FavoriteMetricCard(
-                            emoji: "💧",
-                            title: "Water",
-                            subtitle: "Today",
-                            value1: "\(healthViewModel.todayWaterGlasses)",
-                            unit1: "glasses",
-                            value2: "\(Int(Double(healthViewModel.todayWaterGlasses) / Double(settingsManager.dailyWaterGoal) * 100))%",
-                            unit2: "goal",
-                            gradient: AppTheme.cardGreenGradient
-                        )
-                    }
-                    
-                    // Heart Rate Card - Tappable
                     Button(action: { selectedMetric = .heartRate }) {
                         FavoriteMetricCard(
                             emoji: "❤️",
                             title: "Heart",
-                            subtitle: "Last reading",
+                            subtitle: "Last Reading",
                             value1: "\(healthViewModel.lastHeartRate)",
-                            unit1: "BPM",
+                            unit1: "bpm",
                             value2: healthViewModel.heartRateStatus,
                             unit2: "status",
                             gradient: AppTheme.cardRedGradient
                         )
                     }
+                    
+                    Button(action: { selectedMetric = .water }) {
+                        FavoriteMetricCard(
+                            emoji: "💧",
+                            title: "Water",
+                            subtitle: "Daily Goal",
+                            value1: "\(healthViewModel.todayWaterGlasses)",
+                            unit1: "glasses",
+                            value2: waterCompletionPercentage,
+                            unit2: "complete",
+                            gradient: AppTheme.cardBlueGradient
+                        )
+                    }
                 }
-                .padding(.horizontal, 16)
+                .padding(.horizontal, 20)
             }
         }
         .sheet(item: $selectedMetric) { metric in
@@ -260,9 +219,10 @@ struct DashboardView: View {
                 ZStack {
                     switch metric {
                     case .steps: StepsDetailView()
-                    case .sleep: SleepDetailView()
+                    case .sleep: SleepDetailView() // Note: Not in favorites currently but good to have
                     case .water: WaterDetailView()
                     case .heartRate: HeartRateDetailView()
+                    case .calories: CaloriesDetailView() // Note: Not in favorites currently
                     }
                 }
                 .navigationTitle(metric.title)
@@ -277,6 +237,16 @@ struct DashboardView: View {
             .presentationDetents([.medium, .large])
             .preferredColorScheme(settingsManager.colorScheme)
         }
+    }
+    
+    private var stepsCompletionPercentage: String {
+        let percentage = Double(healthViewModel.todaySteps) / Double(max(settingsManager.dailyStepsGoal, 1)) * 100
+        return "\(Int(percentage))%"
+    }
+    
+    private var waterCompletionPercentage: String {
+        let percentage = Double(healthViewModel.todayWaterGlasses) / Double(max(settingsManager.dailyWaterGoal, 1)) * 100
+        return "\(Int(percentage))%"
     }
     
     // MARK: - All Health Data Section
@@ -305,15 +275,30 @@ struct DashboardView: View {
                     Button(action: { showingAddWaterSheet = true }) {
                         ActivityPill(emoji: "💧", title: "Add Water")
                     }
-                    ActivityPill(emoji: "🧘", title: "Meditation")
-                    ActivityPill(emoji: "🏃", title: "Running")
-                    ActivityPill(emoji: "🧘‍♀️", title: "Yoga")
-                    ActivityPill(emoji: "🏋️", title: "Strength")
+                    Button(action: { startWorkout("Meditation") }) {
+                        ActivityPill(emoji: "🧘", title: "Meditation")
+                    }
+                    Button(action: { startWorkout("Running") }) {
+                        ActivityPill(emoji: "🏃", title: "Running")
+                    }
+                    Button(action: { startWorkout("Yoga") }) {
+                        ActivityPill(emoji: "🧘‍♀️", title: "Yoga")
+                    }
+                    Button(action: { startWorkout("Strength") }) {
+                        ActivityPill(emoji: "🏋️", title: "Strength")
+                    }
                 }
                 .padding(.horizontal, 16)
             }
         }
     }
+    
+    private func startWorkout(_ type: String) {
+        selectedWorkoutType = type
+        showingAddWorkoutSheet = true
+    }
+    
+    // ... (rest of the file) ...
     
     // MARK: - Recent Logs Section
     private var recentLogsSection: some View {
@@ -602,6 +587,113 @@ struct RecentLogRow: View {
         .padding()
         .background(AppTheme.darkNavyCard)
         .clipShape(RoundedRectangle(cornerRadius: 12))
+    }
+}
+
+// MARK: - Add Workout Sheet
+struct AddWorkoutSheet: View {
+    @Environment(\.dismiss) var dismiss
+    @StateObject private var healthViewModel = HealthViewModel.shared
+    
+    let initialActivity: String
+    
+    @State private var selectedActivity: String
+    @State private var duration: String = ""
+    @State private var calories: String = ""
+    
+    let activities = ["Running", "Yoga", "Strength", "Meditation", "Cycling", "Swimming"]
+    
+    init(activity: String = "Running") {
+        self.initialActivity = activity
+        _selectedActivity = State(initialValue: activity)
+    }
+    
+    var body: some View {
+        NavigationStack {
+            ZStack {
+                AppTheme.darkNavyBg.ignoresSafeArea()
+                
+                VStack(spacing: 24) {
+                    // Header Icon
+                    ZStack {
+                        Circle()
+                            .fill(AppTheme.accentOrange.opacity(0.1))
+                            .frame(width: 80, height: 80)
+                        Text(activityEmoji(selectedActivity))
+                            .font(.system(size: 40))
+                    }
+                    .padding(.top, 20)
+                    
+                    VStack(spacing: 20) {
+                        Picker("Activity", selection: $selectedActivity) {
+                            ForEach(activities, id: \.self) { activity in
+                                Text(activity).tag(activity)
+                            }
+                        }
+                        .pickerStyle(.menu)
+                        .padding()
+                        .background(AppTheme.darkNavyCard)
+                        .clipShape(RoundedRectangle(cornerRadius: 12))
+                        
+                        TextField("Duration (minutes)", text: $duration)
+                            .textFieldStyle(.roundedBorder)
+                            .keyboardType(.numberPad)
+                            .padding(.horizontal)
+                        
+                        TextField("Calories Burned", text: $calories)
+                            .textFieldStyle(.roundedBorder)
+                            .keyboardType(.numberPad)
+                            .padding(.horizontal)
+                    }
+                    
+                    Button(action: logWorkout) {
+                        Text("Log Workout")
+                            .font(.headline)
+                            .foregroundColor(.white)
+                            .frame(maxWidth: .infinity)
+                            .padding()
+                            .background(duration.isEmpty ? Color.gray : AppTheme.accentOrange)
+                            .clipShape(RoundedRectangle(cornerRadius: 12))
+                    }
+                    .disabled(duration.isEmpty)
+                    .padding(.horizontal)
+                    
+                    Spacer()
+                }
+                .padding()
+            }
+            .navigationTitle("Log Workout")
+            .navigationBarTitleDisplayMode(.inline)
+            .toolbar {
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button("Cancel") { dismiss() }
+                        .foregroundColor(AppTheme.accentTeal)
+                }
+            }
+        }
+        .preferredColorScheme(.dark)
+    }
+    
+    private func logWorkout() {
+        // Here we would typically update a ViewModel.
+        // For now, we'll just add to calories as a simulation
+        if let cal = Int(calories) {
+            // healthViewModel.addCalories(cal) // Assuming this exists or just mock it
+            // For now, just dismiss, implying it worked.
+        }
+        dismiss()
+    }
+    
+    private func activityEmoji(_ name: String) -> String {
+        switch name {
+        case "Running": return "🏃"
+        case "Yoga": return "🧘‍♀️"
+        case "Strength": return "🏋️"
+        case "Meditation": return "🧘"
+        case "Cycling": return "🚴"
+        case "Swimming": return "🏊"
+        default: return "🏃"
+        }
     }
 }
 

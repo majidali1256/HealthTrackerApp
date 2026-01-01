@@ -22,6 +22,7 @@ struct AppTheme {
     static let accentGreen = Color(hex: "4CAF50")
     static let accentOrange = Color(hex: "FF9800")
     static let accentRed = Color(hex: "EF5350")
+    static let accentIndigo = Color(hex: "3F51B5")
     
     // MARK: - Card Gradients
     static let cardTealGradient = [Color(hex: "0D3B66"), Color(hex: "1A4D7C")]
@@ -29,6 +30,7 @@ struct AppTheme {
     static let cardGreenGradient = [Color(hex: "004D40"), Color(hex: "00695C")]
     static let cardPurpleGradient = [Color(hex: "4A148C"), Color(hex: "6A1B9A")]
     static let cardRedGradient = [Color(hex: "B71C1C"), Color(hex: "C62828")]
+    static let cardBlueGradient = [Color(hex: "1565C0"), Color(hex: "1976D2")]
     
     // MARK: - Score Ring
     static let scoreRingBg = Color(hex: "1A3A5C")

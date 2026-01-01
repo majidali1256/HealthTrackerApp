@@ -26,30 +26,26 @@ class SettingsManager: ObservableObject {
     
     // MARK: - User Profile
     @AppStorage("userName") var userName: String = "User"
-    @AppStorage("userEmail") var userEmail: String = ""
-    @AppStorage("isPremiumUser") var isPremiumUser: Bool = false
+    // MARK: - Onboarding State
+    @AppStorage("isOnboardingCompleted") var isOnboardingCompleted: Bool = false
     
-    // MARK: - Auth State
-    @AppStorage("isLoggedIn") var isLoggedIn: Bool = true  // Default true for demo
+    // MARK: - Body Metrics
+    @AppStorage("userAge") var userAge: String = ""
+    @AppStorage("userWeight") var userWeight: String = ""
+    @AppStorage("userHeight") var userHeight: String = ""
     
     // MARK: - Singleton
     static let shared = SettingsManager()
     
     private init() {}
     
-    // MARK: - Sign Out
-    func signOut() {
-        isLoggedIn = false
-        userName = "User"
-        userEmail = ""
-        objectWillChange.send()
-    }
-    
-    // MARK: - Sign In (for demo)
-    func signIn(name: String, email: String) {
-        userName = name
-        userEmail = email
-        isLoggedIn = true
+    // MARK: - Complete Onboarding
+    func completeOnboarding(name: String, age: String, weight: String, height: String) {
+        self.userName = name
+        self.userAge = age
+        self.userWeight = weight
+        self.userHeight = height
+        self.isOnboardingCompleted = true
         objectWillChange.send()
     }
     
